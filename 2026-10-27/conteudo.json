@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DISPLAYS",
+    "titulo1": "OLED ou Incell?",
+    "titulo2": "Escolha certa.",
+    "ilustracao": "tres",
+    "selos": ["OLED: preto real", "Incell: custo menor", "Temos as duas"],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "OLÁ, TÉCNICO",
+      "titulo1": "Peças para iPhone",
+      "titulo2": "com qualidade.",
+      "texto": "Displays, tampas traseiras e componentes.",
+      "ilustracao": "tres",
+      "selos": ["Displays", "Tampas", "Componentes"]
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "OLED ou Incell?",
+      "titulo2": "Qual escolher.",
+      "texto": "Veja a diferença no nosso último post.",
+      "ilustracao": "um",
+      "selos": ["OLED", "Incell"]
+    },
+    {
+      "etiqueta": "ENQUETE",
+      "titulo1": "Qual tela você",
+      "titulo2": "mais troca?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>OLED<br><span style='color:#7F8BA3;font-size:40px'>ou</span><br><span style='color:#3D7BFF'>Incell</span>",
+      "texto": "Responda no direct.",
+      "selos": []
+    },
+    {
+      "etiqueta": "TAMPAS",
+      "titulo1": "Tampa trincada?",
+      "titulo2": "Tampa nova.",
+      "ilustracao": "tampas",
+      "selos": ["Várias cores", "Encaixe preciso"],
+      "rodape": "TAMPAS PARA IPHONE"
+    },
+    {
+      "etiqueta": "FALE COM A GENTE",
+      "titulo1": "Precisa de peça?",
+      "titulo2": "Fale no WhatsApp.",
+      "texto": "Atendimento para técnicos e assistências.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
