@@ -24,7 +24,7 @@ O objetivo principal é crescer seguidores no estado de Alagoas (técnicos, assi
 - Hashtags: sempre incluir 4–6 locais, variando entre #alagoas #maceio #maceioal #arapiraca #assistenciatecnicamaceio #celularmaceio #iphonemaceio #tecnicoalagoas #palmeiradosindios #riolargo #penedo, junto com as de produto.
 - Pelo menos 2 vezes por semana, um post ou story fala diretamente com o técnico alagoano (ex.: "Assistência em Maceió? Marca a gente", "De qual cidade de Alagoas você é? Responda no direct").
 - Uma vez por semana, story pedindo para marcar um amigo técnico de Alagoas e compartilhar o post.
-- Nunca inventar endereço, loja física, entrega local ou prazo em Alagoas: só citar o que o dono confirmar.
+- A Elite Parts NÃO tem loja física. Atendimento é pelo WhatsApp (link da bio). Nunca citar endereço, loja ou "venha nos visitar". Entrega e prazo em Alagoas só se o dono confirmar.
 
 ## Regras da marca
 - Fundo escuro #0A0D14, azul #3D7BFF, texto #F2F5FA, cinza #7F8BA3, fonte Michroma (o gerador já aplica).
