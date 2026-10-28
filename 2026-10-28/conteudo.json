@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "TAMPAS TRASEIRAS",
+    "titulo1": "Traseira trincada?",
+    "titulo2": "Aparelho renovado.",
+    "ilustracao": "tampas",
+    "selos": ["Visual de novo", "Linha para iPhone", "Pedido no WhatsApp"],
+    "rodape": "TAMPAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "BOM DIA, ALAGOAS",
+      "titulo1": "Bom dia, técnico!",
+      "titulo2": "Bora trabalhar.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "REEL NOVO",
+      "titulo1": "Essa tela dobra.",
+      "titulo2": "Incell ou OLED?",
+      "texto": "Responda 1 ou 2 no nosso Reel de hoje.",
+      "ilustracao": "um",
+      "selos": ["1 ou 2?"]
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Traseira trincada?",
+      "titulo2": "Tem solução.",
+      "texto": "Veja o post de hoje sobre tampas.",
+      "ilustracao": "tampas",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "De qual cidade",
+      "titulo2": "você atende?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió<br><span style='color:#3D7BFF'>Arapiraca</span><br>Penedo<br><span style='color:#7F8BA3;font-size:40px'>ou outra?</span>",
+      "texto": "Responda no direct.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Monte seu pedido",
+      "titulo2": "pelo WhatsApp.",
+      "texto": "Mande o modelo e a peça que precisa.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
