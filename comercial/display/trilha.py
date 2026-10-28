@@ -1,6 +1,6 @@
 # Gera a trilha (música + efeitos) do comercial. Uso: python3 trilha.py saida.wav
 import numpy as np, sys, wave
-SR=44100; DUR=36.0; N=int(SR*DUR)
+SR=44100; DUR=40.0; N=int(SR*DUR)
 rng=np.random.default_rng(3)
 L=np.zeros(N); R=np.zeros(N)
 def add(sig,t,g=1.0,pan=0.0):
@@ -42,7 +42,7 @@ while t<DUR:
     b+=1
 # pad suave no começo e no fim
 for m in [57,60,64,69]: add(tone(mf(m),3.6,a=.8,d=6)*.04,0)
-for m in [57,60,64,69,72]: add(tone(mf(m),4.4,a=.1,d=3)*.05,31.6)
+for m in [57,60,64,69,72]: add(tone(mf(m),8.4,a=.1,d=5)*.05,31.6)
 # whoosh
 def whoosh(d=.6):
     n=noise(d); e=np.sin(np.linspace(0,np.pi,len(n)))**2; return lp(n*e,.08)*.9

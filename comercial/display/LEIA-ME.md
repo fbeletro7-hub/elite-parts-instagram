@@ -1,9 +1,12 @@
 # Comercial "Qualidade do display"
 
-Vídeo vertical (1080x1920, 36s) com um técnico trocando a tela: abre o iPhone, tira a tela trincada,
+Vídeo vertical (1080x1920, 40s, com narração) com um técnico trocando a tela: abre o iPhone, tira a tela trincada,
 instala o Display Elite, liga e compara com uma tela comum.
 
     python3 trilha.py trilha.wav
-    node renderizar.js comercial.mp4 trilha.wav
+    python3 narracao.py /mnt/project-files/voz voz.wav
+    node renderizar.js comercial.mp4 trilha.wav voz.wav
+
+A voz segue o padrão de `../VOZ-PADRAO.md`.
 
 Textos e tempos das cenas ficam em `cena.html` (lista `CAPS` e função `render`).
