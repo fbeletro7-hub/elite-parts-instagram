@@ -1,6 +1,6 @@
 # Voz padrão dos vídeos Elite Parts
 
-Toda narração usa o personagem **Téo** (técnico da Elite Parts) com esta voz, sempre com os mesmos ajustes.
+Toda narração usa o personagem **Téo** (técnico da Elite Parts) com esta voz, sempre com os mesmos ajustes. Voz escolhida pelo Matheus em 28/10/2026.
 A Piper/Faber foi testada e descartada (soou robótica).
 
 | Item | Valor |

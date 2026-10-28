@@ -120,17 +120,17 @@ body{width:1080px;height:1920px;overflow:hidden;position:relative;background:#0A
 <div id="rip" class="abs" style="inset:0;z-index:14;pointer-events:none"></div>
 
 <div id="cta" class="abs">
-  <img class="sym" style="height:220px;margin-top:330px">
-  <div style="font-size:52px;letter-spacing:18px;margin-top:50px;padding-left:18px">ELITE PARTS</div>
-  <div style="font-size:20px;letter-spacing:10px;margin-top:20px;color:#7F8BA3">DISTRIBUIDORA</div>
-  <div style="font-size:70px;line-height:1.2;margin-top:110px">Peça seu<br><span style="color:#3D7BFF">Display Elite.</span></div>
-  <div style="font-family:Inter;font-size:34px;color:#9aa6bf;margin-top:40px">Pedido até 10h, entrega no mesmo dia.</div>
-  <div style="margin:70px 90px 0;background:#3D7BFF;border-radius:99px;padding:36px;font-size:34px;letter-spacing:3px;box-shadow:0 20px 60px rgba(61,123,255,.45)">Chame no WhatsApp</div>
-  <div style="font-size:36px;margin-top:60px">@elitepartsofc</div>
-  <div style="font-size:22px;letter-spacing:8px;color:#7F8BA3;margin-top:20px">ARAPIRACA · AL</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:20px;margin-top:150px;font-size:26px;letter-spacing:8px"><img class="sym" style="height:70px">ELITE PARTS</div>
+  <div style="font-size:70px;line-height:1.2;margin-top:60px">Peça seu<br><span style="color:#3D7BFF">Display Elite.</span></div>
+  <div style="font-family:Inter;font-size:34px;color:#9aa6bf;margin-top:30px">Pedido até 10h, entrega no mesmo dia.</div>
+  <div id="teo" class="abs" style="left:54px;top:540px;width:972px;height:1215px"></div>
+  <div class="abs" style="left:90px;right:90px;bottom:150px;background:#3D7BFF;border-radius:99px;padding:36px;font-size:34px;letter-spacing:3px;box-shadow:0 20px 60px rgba(61,123,255,.45)">Chame no WhatsApp</div>
+  <div class="abs" style="left:0;right:0;bottom:70px;font-size:30px;text-shadow:0 2px 12px #000">@elitepartsofc <span style="color:#9aa6bf;font-size:20px;letter-spacing:6px">· ARAPIRACA · AL</span></div>
 </div>
 
+<script src="../personagem/personagem.js"></script>
 <script>
+let BOCA=[];
 const $=id=>document.getElementById(id);
 const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
 const ez=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
@@ -279,6 +279,9 @@ window.render=function(t){
  // CTA
  const ct=pr(t,31.6,32.2);
  $('cta').style.opacity=ct;$('cta').style.transform=`translateY(${(1-eo(ct))*40}px)`;
+ if(ct>0){const f=Math.round(t*30),bo=BOCA[f]||0;const pis=[33.6,36.2,38.8].reduce((m,x)=>Math.max(m,1-Math.abs(t-x)/.08),0);
+  $('teo').innerHTML=teo({boca:bo,piscar:pis,joinha:t>35.6,olhar:Math.sin(t*.7)*.5,simbolo:document.querySelector('img.sym').src}).replace('width="1080" height="1350"','width="972" height="1215"');
+  $('teo').style.transform=`translateY(${Math.sin(t*2.2)*6-bo*6}px)`;}
  $('bg').style.background=`radial-gradient(circle at 50% ${t>31.6?42:58}%,#1d3a80 0%,#0f1d44 24%,#0A0D14 58%)`;
 };
 </script>

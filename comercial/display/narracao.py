@@ -29,5 +29,11 @@ for t, txt in FALAS:
     fim_ant = t + d
     track[a:a + len(s)] += s[:len(track) - a]
 track /= max(1e-9, np.abs(track).max()) / 0.9
+# boca do Téo (30 quadros por segundo) para o vídeo
+import json
+hop = SR // 30; n = len(track) // hop
+rms = np.array([np.sqrt(np.mean(track[i*hop:(i+1)*hop]**2)) for i in range(n)])
+boca = np.convolve(np.clip(rms / (np.percentile(rms[rms > 0.01], 90) + 1e-9), 0, 1), [.25, .5, .25], 'same')
+json.dump([round(float(x), 3) for x in boca], open(OUT.rsplit('.', 1)[0] + '.json', 'w'))
 w = wave.open(OUT, 'wb'); w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
 w.writeframes((track * 32767).astype('<i2').tobytes()); w.close()

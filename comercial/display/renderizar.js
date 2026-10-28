@@ -15,6 +15,10 @@ const args = process.argv.slice(2);
   await p.goto('file://' + path.join(__dirname, 'cena.html'));
   const sym = 'data:image/svg+xml;base64,' + fs.readFileSync(path.join(__dirname, 'simbolo.svg')).toString('base64');
   await p.evaluate(s => document.querySelectorAll('img.sym').forEach(i => i.src = s), sym);
+  // boca do Téo: voz.json gerado pelo narracao.py junto do voz.wav
+  const vozArg = args[0] === '--previa' ? null : args[2];
+  const bocaJs = vozArg ? vozArg.replace(/\.wav$/, '.json') : null;
+  if (bocaJs && fs.existsSync(bocaJs)) await p.evaluate(b => { BOCA = b }, JSON.parse(fs.readFileSync(bocaJs, 'utf8')));
   await p.evaluate(() => document.fonts.ready);
   await p.waitForTimeout(800);
 
