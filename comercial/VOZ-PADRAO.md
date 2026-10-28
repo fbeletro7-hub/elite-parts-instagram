@@ -1,23 +1,25 @@
 # Voz padrão dos vídeos Elite Parts
 
-Toda narração de vídeo da Elite Parts usa esta voz, sempre com os mesmos ajustes.
+Toda narração usa o personagem **Téo** (técnico da Elite Parts) com esta voz, sempre com os mesmos ajustes.
+A Piper/Faber foi testada e descartada (soou robótica).
 
 | Item | Valor |
 |---|---|
-| Ferramenta | Piper TTS (`pip install piper-tts`), roda offline, sem conta nem custo |
-| Voz | `pt_BR-faber-medium` (masculina, português do Brasil) |
-| Licença | CC0, livre para uso comercial |
-| Velocidade | `--length-scale 0.95` |
-| Pausa entre frases | `--sentence-silence 0.15` |
-| Arquivos do modelo | `/mnt/project-files/voz/pt_BR-faber-medium.onnx` e `.onnx.json` |
-| Download de reserva | https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-pt_BR-faber-medium.tar.bz2 |
+| Ferramenta | Kokoro v1.0 via `pip install kokoro-onnx soundfile`, roda offline, sem conta |
+| Voz | `pm_alex` (masculina, português do Brasil), `lang='pt-br'` |
+| Velocidade | `speed=1.05` |
+| Pausa entre frases | 0.35 s |
+| Modelos | https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx e `voices-v1.0.bin` (mesmo endereço) |
+| Personagem | `comercial/personagem/personagem.js` (Téo), vídeo falando com `video.js` |
+
+Alternativas testadas: `pm_santa` (masculina grave) e `pf_dora` (feminina).
 
 ## Como gerar
 
-    echo "Texto da fala" | python3 -m piper -m /mnt/project-files/voz/pt_BR-faber-medium.onnx \
-      --length-scale 0.95 --sentence-silence 0.15 -f fala.wav
+    python3 comercial/personagem/fala.py pasta-modelos pm_alex fala.wav fala.json "Frase 1." "Frase 2."
+    node comercial/personagem/video.js fala.wav fala.json teo.mp4
 
-Para um vídeo com várias falas em tempos certos, use `comercial/display/narracao.py` como modelo.
+Para narração em tempos certos de um comercial, ver `comercial/display/narracao.py`.
 
 ## Pronúncia (escrever assim no texto da fala)
 
@@ -27,9 +29,7 @@ Para um vídeo com várias falas em tempos certos, use `comercial/display/narrac
 | Display | Displêi |
 | WhatsApp | uótsap |
 | 10h | as dez |
-| @elitepartsofc | arroba elíti párts ó efe cê |
 
 ## Mixagem
 
-A voz entra por cima da trilha e a música abaixa sozinha enquanto ela fala
-(sidechaincompress no ffmpeg, ver `comercial/display/renderizar.js`).
+A música abaixa sozinha enquanto a voz fala (sidechaincompress no ffmpeg, ver `comercial/display/renderizar.js`).
