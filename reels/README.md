@@ -7,3 +7,8 @@ Gerador do Reel "Display Elite" (18 s, 1080x1920).
     python3 gerador/musica.py                                               # trilha própria (sem direitos autorais)
 
 Mixagem com ffmpeg (música abaixa sob a voz com sidechaincompress). Vídeos prontos ficam em `reels/` na pasta do projeto.
+
+## Viral "Essa tela dobra" (16,6 s)
+
+`viral/render.py` (precisa de `Michroma.ttf` na mesma pasta: `npm pack @fontsource/michroma` e converter o woff2 com fonttools) e `viral/musica.py` (batida + efeitos). Voz com `gerador/voz.py`.
+Roteiro: tela Soft OLED dobrando, desafio "Incell ou OLED? comenta 1 ou 2", teste do preto, resposta, WhatsApp.
