@@ -1,0 +1,57 @@
+{
+  "feed": {
+    "etiqueta": "DICA DE BANCADA",
+    "titulo1": "Testou antes",
+    "titulo2": "de colar?",
+    "ilustracao": "um",
+    "selos": [
+      "Touch inteiro",
+      "Brilho e cor",
+      "Proximidade"
+    ],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "QUINTA DE BANCADA",
+      "titulo1": "Bancada pronta?",
+      "titulo2": "Bora pra quinta.",
+      "texto": "Peças para iPhone para técnicos de Alagoas.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA RÁPIDA",
+      "titulo1": "Tela nova chegou?",
+      "titulo2": "Teste primeiro.",
+      "texto": "Ligue e teste antes de fixar com cola.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Testou antes",
+      "titulo2": "de colar?",
+      "texto": "Veja os testes no post de hoje.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "MARCA UM AMIGO",
+      "titulo1": "Conhece técnico",
+      "titulo2": "em Alagoas?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Marca ele<br><span style='color:#3D7BFF'>e compartilha</span><br><span style='color:#7F8BA3;font-size:40px'>o post de hoje</span>",
+      "texto": "Maceió, Arapiraca e todo o interior.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Precisa de tela?",
+      "titulo2": "Chama no WhatsApp.",
+      "texto": "Mande o modelo do iPhone e a peça.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
