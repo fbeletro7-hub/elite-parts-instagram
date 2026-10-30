@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "PEDIDO RÁPIDO",
+    "titulo1": "Pedido certo",
+    "titulo2": "de primeira.",
+    "ilustracao": "tres",
+    "selos": ["Modelo exato", "Peça e cor", "Foto da peça"],
+    "rodape": "PEDIDOS PELO WHATSAPP"
+  },
+  "stories": [
+    {
+      "etiqueta": "SEXTOU, ALAGOAS",
+      "titulo1": "Bom dia, técnico!",
+      "titulo2": "Sexta de bancada.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE PEDIDO",
+      "titulo1": "Qual iPhone é?",
+      "titulo2": "Confira antes.",
+      "texto": "Ajustes › Geral › Sobre mostra o nome do modelo.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Pedido certo",
+      "titulo2": "de primeira.",
+      "texto": "Veja o que mandar no WhatsApp.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "ENQUETE",
+      "titulo1": "O que mais sai",
+      "titulo2": "na sua bancada?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Tela<br><span style='color:#7F8BA3;font-size:40px'>ou</span><br><span style='color:#3D7BFF'>Tampa</span>",
+      "texto": "Responda no direct, técnico de Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Mande o modelo,",
+      "titulo2": "a peça e a cor.",
+      "texto": "Atendimento pelo WhatsApp.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
