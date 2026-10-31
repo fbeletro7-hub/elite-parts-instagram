@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "COMPONENTES",
+    "titulo1": "Não é só tela.",
+    "titulo2": "Tem componente.",
+    "ilustracao": "tres",
+    "selos": ["Displays", "Tampas traseiras", "Componentes"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SÁBADO, ALAGOAS",
+      "titulo1": "Sábado também",
+      "titulo2": "é dia de bancada.",
+      "texto": "Peças para iPhone para quem conserta.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE SEGURANÇA",
+      "titulo1": "Abriu o iPhone?",
+      "titulo2": "Solte a bateria.",
+      "texto": "Desconecte o flex da bateria antes de mexer no display.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Não é só tela.",
+      "titulo2": "Tem componente.",
+      "texto": "Veja o post de hoje.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Sua bancada abre",
+      "titulo2": "no sábado?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Sim<br><span style='color:#3D7BFF'>Só de manhã</span><br><span style='color:#7F8BA3;font-size:40px'>ou folga?</span>",
+      "texto": "Responda no direct.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Precisa de peça?",
+      "titulo2": "Fale no WhatsApp.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
