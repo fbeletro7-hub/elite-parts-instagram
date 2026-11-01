@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "SEMANA NOVA",
+    "titulo1": "Domingo é dia",
+    "titulo2": "de montar a lista.",
+    "ilustracao": "tres",
+    "selos": ["Modelos que mais saem", "Telas e tampas", "Pedido no WhatsApp"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "DOMINGO, ALAGOAS",
+      "titulo1": "Bom domingo,",
+      "titulo2": "técnico!",
+      "texto": "Dia de descansar e planejar a semana.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Anote o que",
+      "titulo2": "mais saiu.",
+      "texto": "Os modelos que mais chegaram viram sua lista de peças.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Domingo é dia",
+      "titulo2": "de montar a lista.",
+      "texto": "Veja o post de hoje.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Qual iPhone mais",
+      "titulo2": "chega na bancada?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Linha 11<br><span style='color:#7F8BA3;font-size:40px'>ou</span><br><span style='color:#3D7BFF'>Linha 13</span>",
+      "texto": "Responda no direct.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Lista pronta?",
+      "titulo2": "Peça no WhatsApp.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}

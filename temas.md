@@ -8,3 +8,4 @@
 | 2026-10-29 | Dica de bancada: testou antes de colar? (testes do display antes de fixar) | Quinta de bancada, dica teste primeiro, post novo, marca um amigo técnico de Alagoas, pedido no WhatsApp |
 | 2026-10-30 | Pedido rápido: pedido certo de primeira (o que mandar no WhatsApp) | Sextou Alagoas, dica conferir modelo do iPhone, post novo, enquete tela ou tampa, mande modelo/peça/cor no WhatsApp |
 | 2026-10-31 | Componentes: não é só tela, tem componente (displays, tampas e componentes num só lugar) | Sábado também é dia de bancada, dica soltar a bateria antes do display, post novo, enquete bancada abre no sábado, precisa de peça fale no WhatsApp |
+| 2026-11-01 | Semana nova: domingo é dia de montar a lista de peças | Bom domingo técnico, dica anote o que mais saiu, post novo, enquete Linha 11 ou Linha 13, lista pronta peça no WhatsApp |
