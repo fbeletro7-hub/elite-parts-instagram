@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA TÉCNICA",
+    "titulo1": "Trocou a tela",
+    "titulo2": "e ficou preta?",
+    "ilustracao": "um",
+    "selos": ["Conector encaixado", "Flex sem dobra", "Bateria conectada"],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SEGUNDA, ALAGOAS",
+      "titulo1": "Segunda começou,",
+      "titulo2": "bancada ligada.",
+      "texto": "Peças para iPhone para quem conserta.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Flex do display",
+      "titulo2": "sem dobra forte.",
+      "texto": "Dobra marcada no flex pode dar listra ou tela sem imagem.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Trocou a tela",
+      "titulo2": "e ficou preta?",
+      "texto": "Veja o post de hoje.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Marca um amigo",
+      "titulo2": "técnico.",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>de Maceió<br><span style='color:#7F8BA3;font-size:40px'>ou</span><br><span style='color:#3D7BFF'>do interior</span>",
+      "texto": "Compartilhe o post de hoje com ele.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Semana cheia?",
+      "titulo2": "Peça no WhatsApp.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
