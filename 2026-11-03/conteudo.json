@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "SINAIS NA BANCADA",
+    "titulo1": "Hora de trocar",
+    "titulo2": "o display?",
+    "ilustracao": "um",
+    "selos": ["Toque falhando", "Mancha ou listra", "Vidro trincado"],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "TERÇA, ALAGOAS",
+      "titulo1": "Terça de",
+      "titulo2": "tela na bancada.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Teste o toque",
+      "titulo2": "nos 4 cantos.",
+      "texto": "Arraste um ícone pela tela toda antes de entregar o aparelho.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Hora de trocar",
+      "titulo2": "o display?",
+      "texto": "Veja os 3 sinais no post de hoje.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "De qual cidade",
+      "titulo2": "você atende?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca,<br>Penedo, Rio Largo...<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Queremos conhecer os técnicos de Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Cliente com tela",
+      "titulo2": "falhando?",
+      "texto": "Peça o display para iPhone no WhatsApp.",
+      "ilustracao": "tres",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
