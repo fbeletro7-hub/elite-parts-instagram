@@ -11,3 +11,4 @@
 | 2026-11-01 | Semana nova: domingo é dia de montar a lista de peças | Bom domingo técnico, dica anote o que mais saiu, post novo, enquete Linha 11 ou Linha 13, lista pronta peça no WhatsApp |
 | 2026-11-02 | Dica técnica: trocou a tela e ficou preta? (conector, flex, bateria) | Segunda começou bancada ligada, dica flex sem dobra forte, post novo, marca um amigo técnico de Alagoas, semana cheia peça no WhatsApp |
 | 2026-11-03 | Educação técnica: hora de trocar o display? (toque falhando, mancha/listra, vidro trincado) | Terça de tela na bancada, dica teste o toque nos 4 cantos, post novo, de qual cidade de Alagoas você atende, cliente com tela falhando peça no WhatsApp |
+| 2026-11-04 | Cuidado na bancada: display guardado do jeito certo (embalagem, sem peso, longe do calor) | Quarta de bancada cheia, dica película só sai na montagem, post novo, enquete quantas telas por semana, acabou o display na gaveta peça no WhatsApp |

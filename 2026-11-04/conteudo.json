@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "CUIDADO NA BANCADA",
+    "titulo1": "Display guardado",
+    "titulo2": "do jeito certo?",
+    "ilustracao": "um",
+    "selos": ["Na embalagem", "Sem peso em cima", "Longe do calor"],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "QUARTA, ALAGOAS",
+      "titulo1": "Quarta de",
+      "titulo2": "bancada cheia.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Película só sai",
+      "titulo2": "na montagem.",
+      "texto": "Tire a película do display só na hora de instalar. Evita risco e poeira.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Display guardado",
+      "titulo2": "do jeito certo?",
+      "texto": "Veja os 3 cuidados no post de hoje.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Quantas telas",
+      "titulo2": "por semana?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>1 a 5<br>6 a 15<br>mais de 15<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Queremos conhecer a bancada de Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Acabou o display",
+      "titulo2": "na gaveta?",
+      "texto": "Peça o display para iPhone no WhatsApp.",
+      "ilustracao": "tres",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
