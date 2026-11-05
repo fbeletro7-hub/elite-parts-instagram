@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "TAMPAS TRASEIRAS",
+    "titulo1": "Tampa certa",
+    "titulo2": "de primeira.",
+    "ilustracao": "tampas",
+    "selos": ["Modelo exato", "Cor do aparelho", "Foto da traseira"],
+    "rodape": "TAMPAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "QUINTA, ALAGOAS",
+      "titulo1": "Quinta de",
+      "titulo2": "traseira nova.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tampas",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Confira o modelo",
+      "titulo2": "em Ajustes.",
+      "texto": "Ajustes > Geral > Sobre mostra o modelo do iPhone. Evita pedir a tampa errada.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Tampa certa",
+      "titulo2": "de primeira.",
+      "texto": "Veja os 3 cuidados no post de hoje.",
+      "ilustracao": "tampas",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Qual cor de tampa",
+      "titulo2": "mais sai aí?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Preta<br>Branca<br>Azul<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Conta pra gente como é na sua bancada.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Cliente com",
+      "titulo2": "traseira trincada?",
+      "texto": "Peça a tampa para iPhone no WhatsApp.",
+      "ilustracao": "tampas",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
