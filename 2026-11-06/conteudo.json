@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA TÉCNICA",
+    "titulo1": "True Tone",
+    "titulo2": "sumiu na troca?",
+    "ilustracao": "um",
+    "selos": ["Leia o original", "Grave no novo", "Teste no Ajustes"],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SEXTA, ALAGOAS",
+      "titulo1": "Sextou com",
+      "titulo2": "bancada cheia.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Leia a tela velha",
+      "titulo2": "antes de tirar.",
+      "texto": "Com o programador, salve os dados do display original antes de desmontar.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "True Tone",
+      "titulo2": "sumiu?",
+      "texto": "Veja os 3 passos no post de hoje.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Você transfere",
+      "titulo2": "o True Tone?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Sempre<br>Às vezes<br>Nunca<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Conta pra gente como é na sua bancada.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Fim de semana",
+      "titulo2": "com tela na mão.",
+      "texto": "Peça seu display para iPhone no WhatsApp.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
