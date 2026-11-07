@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA DE BANCADA",
+    "titulo1": "Antes de abrir,",
+    "titulo2": "anote tudo.",
+    "ilustracao": "um",
+    "selos": ["Face ID e câmeras", "Som e microfone", "Riscos e marcas"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SÁBADO, ALAGOAS",
+      "titulo1": "Bom sábado,",
+      "titulo2": "técnico!",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Foto do aparelho",
+      "titulo2": "na entrada.",
+      "texto": "Fotografe riscos e marcas com o cliente do lado, antes de abrir.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Antes de abrir,",
+      "titulo2": "anote tudo.",
+      "texto": "Veja o checklist no post de hoje.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "O que mais chega",
+      "titulo2": "na bancada?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>1 · Tela<br>2 · Traseira<br>3 · Outro<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Conta pra gente como é na sua assistência.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Segunda já",
+      "titulo2": "com peça certa.",
+      "texto": "Peça display, tampa ou componente para iPhone no WhatsApp.",
+      "ilustracao": "tres",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
