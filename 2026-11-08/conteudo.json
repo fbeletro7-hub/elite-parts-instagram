@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA TÉCNICA",
+    "titulo1": "Tela levantando?",
+    "titulo2": "Olhe a bateria.",
+    "ilustracao": "um",
+    "selos": ["Bateria estufada", "Adesivo vencido", "Encaixe torto"],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "DOMINGO, ALAGOAS",
+      "titulo1": "Domingo de",
+      "titulo2": "descanso.",
+      "texto": "Amanhã a bancada volta. Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE SEGURANÇA",
+      "titulo1": "Bateria estufada?",
+      "titulo2": "Não fure.",
+      "texto": "Não pressione nem perfure. Retire com cuidado e descarte em local adequado.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Tela levantando?",
+      "titulo2": "Olhe a bateria.",
+      "texto": "Veja os 3 motivos no post de hoje.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Já pegou bateria",
+      "titulo2": "estufada?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>1 · Toda semana<br>2 · Às vezes<br>3 · Nunca<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Conta pra gente como é na sua assistência.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Lista da semana",
+      "titulo2": "no WhatsApp.",
+      "texto": "Mande modelo e peça: display, tampa ou componente para iPhone.",
+      "ilustracao": "tres",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
