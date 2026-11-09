@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DISPLAYS PARA IPHONE",
+    "titulo1": "Orçamento de tela?",
+    "titulo2": "Dê opções.",
+    "ilustracao": "tres",
+    "selos": ["Incell", "OLED", "Soft OLED"],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SEGUNDA, ALAGOAS",
+      "titulo1": "Bom dia,",
+      "titulo2": "técnico!",
+      "texto": "Semana começando. Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE ATENDIMENTO",
+      "titulo1": "Mostre a",
+      "titulo2": "diferença.",
+      "texto": "Explique ao cliente o que muda entre as telas. Ele escolhe com segurança.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Orçamento de tela?",
+      "titulo2": "Dê opções.",
+      "texto": "Veja no post de hoje as 3 opções para oferecer.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Qual tela mais",
+      "titulo2": "sai na sua?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>1 · Incell<br>2 · OLED<br>3 · Soft OLED<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Conta pra gente o que o cliente de Alagoas mais pede.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Orçamento na",
+      "titulo2": "mão? Chama.",
+      "texto": "Mande modelo do iPhone e tipo de tela no WhatsApp.",
+      "ilustracao": "tres",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
