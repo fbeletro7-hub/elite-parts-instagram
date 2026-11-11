@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "COMPONENTES",
+    "titulo1": "Não carrega?",
+    "titulo2": "Pode ser a porta.",
+    "ilustracao": "um",
+    "selos": ["Sujeira na porta", "Cabo e fonte", "Flex de carga"],
+    "rodape": "COMPONENTES PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "QUARTA, ALAGOAS",
+      "titulo1": "Meio de semana,",
+      "titulo2": "bancada a mil.",
+      "texto": "Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Olhe a porta",
+      "titulo2": "com lanterna.",
+      "texto": "Fiapo de bolso no conector impede o cabo de encaixar até o fim.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Não carrega?",
+      "titulo2": "Confira isso.",
+      "texto": "Veja no post de hoje 3 pontos antes de trocar a bateria.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Quantos chegam",
+      "titulo2": "sem carregar?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>1 · Todo dia<br>2 · Toda semana<br>3 · Quase nunca<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Conta pra gente como é na sua bancada em Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Precisa de",
+      "titulo2": "componente?",
+      "texto": "Mande o modelo do iPhone e a peça no WhatsApp.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
