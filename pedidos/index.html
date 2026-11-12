@@ -8,7 +8,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Monte seu pedido de telas para iPhone e envie direto no WhatsApp da Elite Parts.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@400;500;600;700;800;900&display=swap">
 <style>
 /* Layout: vitrine em coluna única (estilo app), lista de telas com contador e barra fixa do carrinho embaixo. */
 :root {
@@ -120,6 +120,53 @@ label textarea { min-height: 70px; resize: vertical; }
 .bar button:disabled { background: var(--surface-2); color: var(--muted); cursor: default; }
 footer { color: var(--muted); font-size: 12px; text-align: center; }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+/* ===== Visual chamativo: igual à tabela de preços azul ===== */
+html, body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 90% 45% at 50% -5%, rgba(61,123,255,.38), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(61,123,255,.18), transparent 70%),
+    linear-gradient(rgba(61,123,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(61,123,255,.06) 1px, transparent 1px);
+  background-size: auto, auto, 32px 32px, 32px 32px;
+  background-attachment: fixed;
+}
+header.brand { justify-content: center; padding-top: 8px; }
+header.brand svg { width: 54px; filter: drop-shadow(0 0 14px rgba(61,123,255,.55)); }
+.brand-name { font-size: 24px; }
+.brand-name::after { content: ""; display: block; width: 34px; height: 3px; background: var(--accent); border-radius: 2px; margin-top: 5px; }
+.hero { text-align: center; }
+.hero h1 {
+  font-family: var(--font-body); font-weight: 900; font-size: clamp(34px, 11vw, 52px); letter-spacing: -.045em; line-height: .98;
+  text-transform: uppercase;
+}
+.hero h1 b { font-weight: 900; color: var(--accent); text-shadow: 0 0 28px rgba(61,123,255,.55); }
+.hero p { font-size: 16px; color: #C9D3E6; }
+.promo {
+  display: flex; align-items: center; gap: 14px; padding: 16px; border-radius: 18px;
+  background: linear-gradient(110deg, #2F64E0, #3D7BFF 60%, #5B91FF);
+  box-shadow: 0 10px 40px rgba(61,123,255,.45), inset 0 1px 0 rgba(255,255,255,.25);
+}
+.promo .dd { flex: none; background: #fff; color: #1E3E91; font-weight: 900; font-size: 22px; border-radius: 12px; padding: 10px 12px; letter-spacing: -.02em; }
+.promo strong { display: block; font-size: 18px; font-weight: 900; letter-spacing: .01em; }
+.promo span { display: block; font-size: 13px; color: rgba(255,255,255,.88); }
+.list { background: rgba(18,24,38,.88); box-shadow: 0 0 0 1px rgba(61,123,255,.12), 0 20px 50px rgba(0,0,0,.35); }
+.item:nth-child(even) { background: rgba(26,34,52,.55); }
+.item.on, .item.on:nth-child(even) { background: rgba(61,123,255,.14); box-shadow: inset 4px 0 0 var(--accent); }
+.item .name { font-size: 18px; }
+.price { font-size: 30px; font-weight: 900; letter-spacing: -.03em; line-height: 1; }
+.price span { font-size: 14px; font-weight: 800; }
+.price i { font-style: normal; color: var(--accent); font-size: 15px; font-weight: 800; }
+.add { background: var(--accent); border-color: var(--accent); box-shadow: 0 4px 16px rgba(61,123,255,.45); }
+.add:hover { background: #5B91FF; }
+.stepper { border-color: var(--accent); }
+form.order { border-color: rgba(61,123,255,.35); box-shadow: 0 0 40px rgba(61,123,255,.15); }
+form.order h2 { font-family: var(--font-body); font-weight: 900; font-size: 22px; letter-spacing: -.02em; }
+form.order h2 b { color: var(--accent); }
+.send { box-shadow: 0 8px 28px rgba(37,211,102,.35); font-size: 17px; }
+.bar button { box-shadow: 0 6px 22px rgba(61,123,255,.5); }
+.bar-info strong { font-size: 22px; font-weight: 900; }
 </style>
 
 <div class="wrap">
@@ -132,9 +179,14 @@ footer { color: var(--muted); font-size: 12px; text-align: center; }
   </header>
 
   <section class="hero">
-    <h1>Monte seu pedido de <b>telas</b></h1>
+    <h1>Peça suas <b>telas</b></h1>
     <p>Escolha os modelos e as quantidades. O pedido vai pronto para o nosso WhatsApp.</p>
   </section>
+
+  <div class="promo">
+    <div class="dd">DD</div>
+    <div><strong>MARCA DD · SOFT OLED</strong><span>Cores vivas, tela flexível e toque preciso, mais próxima da original</span></div>
+  </div>
 
   <div class="search">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
@@ -142,12 +194,12 @@ footer { color: var(--muted); font-size: 12px; text-align: center; }
   </div>
 
   <div>
-    <div class="section-label"><span>Telas OLED completas com touch</span><span id="atualizado"></span></div>
+    <div class="section-label"><span>Telas OLED com touch</span><span id="atualizado"></span></div>
   </div>
   <div class="list" id="lista" role="list"></div>
 
   <form class="order" id="pedido" novalidate>
-    <h2>SEU PEDIDO</h2>
+    <h2>SEU <b>PEDIDO</b></h2>
     <div class="summary" id="resumo"></div>
     <label for="nome">Seu nome ou nome da assistência
       <input id="nome" name="nome" autocomplete="name" placeholder="Ex.: João · JR Cell" required>
@@ -229,7 +281,7 @@ function render() {
     return `<div class="item${q ? " on" : ""}" role="listitem">
       <div class="name">${p.modelo}<small>Tela para ${p.modelo}</small><span class="badge ${tipo}">${p.qualidade}</span></div>
       <div class="right">
-        <div class="price"><span>R$</span>${reais},00</div>
+        <div class="price"><span>R$</span>${reais}<i>,00</i></div>
         ${q ? `<div class="stepper"><button type="button" aria-label="Tirar um ${p.modelo}" data-id="${p.id}" data-d="-1">−</button><output aria-live="polite">${q}</output><button type="button" aria-label="Mais um ${p.modelo}" data-id="${p.id}" data-d="1" ${q >= 99 ? "disabled" : ""}>+</button></div>`
              : `<button type="button" class="add" data-id="${p.id}" data-d="1" aria-label="Adicionar ${p.modelo}">Adicionar</button>`}
       </div>
