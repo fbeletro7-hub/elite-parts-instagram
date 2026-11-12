@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DISPLAYS",
+    "titulo1": "Linha na tela?",
+    "titulo2": "É hora do display.",
+    "ilustracao": "um",
+    "selos": ["Linhas coloridas", "Mancha escura", "Toque fantasma"],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "QUINTA, ALAGOAS",
+      "titulo1": "Bom dia,",
+      "titulo2": "técnico!",
+      "texto": "Mais um dia de bancada cheia. Conte com a Elite Parts.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Mostre o defeito",
+      "titulo2": "com fundo branco.",
+      "texto": "Mancha e linha aparecem melhor. O cliente entende na hora por que trocar.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Linha na tela?",
+      "titulo2": "Veja os sinais.",
+      "texto": "No post de hoje: 3 sinais de que o display do iPhone precisa de troca.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Marque um amigo",
+      "titulo2": "técnico.",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Conhece alguém<br>de assistência<br>em Alagoas?<br><span style='color:#3D7BFF'>compartilhe o post</span>",
+      "texto": "Maceió, Arapiraca, Penedo ou interior: manda pra ele.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Precisa de",
+      "titulo2": "display?",
+      "texto": "Mande o modelo do iPhone no WhatsApp e escolha entre Incell e OLED.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
