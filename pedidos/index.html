@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0D14">
+<title>Elite Parts Pedidos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Monte seu pedido de telas para iPhone e envie direto no WhatsApp da Elite Parts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: vitrine em coluna única (estilo app), lista de telas com contador e barra fixa do carrinho embaixo. */
+:root {
+  --bg: #0A0D14;
+  --surface: #121826;
+  --surface-2: #1A2234;
+  --line: #24304A;
+  --fg: #F2F5FA;
+  --muted: #7F8BA3;
+  --accent: #3D7BFF;
+  --accent-deep: #2B57B8;
+  --gold: #F2B04B;
+  --gold-bg: rgba(242,176,75,.12);
+  --blue-bg: rgba(61,123,255,.14);
+  --wa: #25D366;
+  --wa-fg: #06210F;
+  --font-display: "Michroma", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--bg); }
+body {
+  margin: 0; color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 560px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 140px;
+  display: flex; flex-direction: column; gap: 20px;
+}
+header.brand { display: flex; align-items: center; gap: 14px; }
+header.brand svg { width: 38px; height: auto; flex: none; }
+.brand-name { font-family: var(--font-display); font-size: 19px; letter-spacing: .14em; line-height: 1.1; }
+.brand-sub { font-size: 10px; letter-spacing: .32em; color: var(--muted); text-transform: uppercase; margin-top: 4px; }
+
+.hero h1 { font-family: var(--font-display); font-size: clamp(20px, 6vw, 26px); line-height: 1.25; margin: 0; text-wrap: balance; font-weight: 400; }
+.hero h1 b { color: var(--accent); font-weight: 400; }
+.hero p { margin: 8px 0 0; color: var(--muted); }
+
+.search { position: relative; }
+.search input {
+  width: 100%; padding: 13px 14px 13px 42px; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--fg); font: inherit; font-size: 16px;
+}
+.search input::placeholder { color: var(--muted); }
+.search svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); }
+input:focus-visible, textarea:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.section-label { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 600; display: flex; justify-content: space-between; }
+
+.list { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface); }
+.item { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; padding: 14px 16px; border-top: 1px solid var(--line); align-items: center; }
+.item:first-child { border-top: 0; }
+.item.on { background: var(--surface-2); box-shadow: inset 3px 0 0 var(--accent); }
+.item .name { font-weight: 700; font-size: 16px; min-width: 0; }
+.item .name small { display: block; font-weight: 500; font-size: 12px; color: var(--muted); }
+.badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; margin-top: 6px; border: 1px solid; }
+.badge.soft { color: #8FB1FF; background: var(--blue-bg); border-color: rgba(61,123,255,.4); }
+.badge.hard { color: var(--gold); background: var(--gold-bg); border-color: rgba(242,176,75,.4); }
+.right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.price { font-weight: 800; font-size: 17px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.price span { color: var(--accent); font-size: 12px; margin-right: 2px; }
+
+.stepper { display: flex; align-items: center; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--bg); }
+.stepper button { width: 36px; height: 34px; border: 0; background: transparent; color: var(--fg); font-size: 20px; line-height: 1; cursor: pointer; }
+.stepper button:disabled { color: #3A4560; cursor: default; }
+.stepper output { min-width: 26px; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.add { border: 1px solid var(--accent); background: var(--blue-bg); color: var(--fg); font: inherit; font-weight: 700; font-size: 14px; padding: 7px 16px; border-radius: 10px; cursor: pointer; }
+.add:hover { background: var(--accent); }
+.empty { padding: 22px 16px; color: var(--muted); text-align: center; }
+
+form.order { display: flex; flex-direction: column; gap: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 16px; }
+form.order h2 { font-family: var(--font-display); font-weight: 400; font-size: 15px; letter-spacing: .06em; margin: 0; }
+.summary { display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+.summary .row { display: flex; justify-content: space-between; gap: 12px; }
+.summary .row span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.summary .total { border-top: 1px dashed var(--line); padding-top: 8px; margin-top: 4px; font-weight: 800; font-size: 16px; }
+.summary .none { color: var(--muted); }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: var(--muted); }
+label input, label textarea {
+  font: inherit; font-size: 16px; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 11px 12px; width: 100%;
+}
+label textarea { min-height: 70px; resize: vertical; }
+.err { color: #FF8A8A; font-size: 13px; min-height: 1em; margin: 0; }
+.send {
+  display: flex; align-items: center; justify-content: center; gap: 10px; border: 0; border-radius: 12px; padding: 15px; width: 100%;
+  background: var(--wa); color: var(--wa-fg); font: inherit; font-weight: 800; font-size: 16px; cursor: pointer; text-decoration: none;
+}
+.send svg { width: 22px; height: 22px; }
+.fine { font-size: 12px; color: var(--muted); margin: 0; text-align: center; }
+
+.bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+  background: rgba(10,13,20,.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.bar-in { max-width: 560px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.bar-info { min-width: 0; }
+.bar-info small { display: block; color: var(--muted); font-size: 12px; }
+.bar-info strong { font-size: 18px; font-variant-numeric: tabular-nums; }
+.bar button { border: 0; background: var(--accent); color: #fff; font: inherit; font-weight: 800; padding: 12px 18px; border-radius: 12px; cursor: pointer; white-space: nowrap; }
+.bar button:disabled { background: var(--surface-2); color: var(--muted); cursor: default; }
+footer { color: var(--muted); font-size: 12px; text-align: center; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+
+<div class="wrap">
+  <header class="brand">
+    <svg viewBox="0 0 140 240" aria-hidden="true"><g transform="translate(12 13)"><rect x="0" y="0" width="116" height="214" rx="28" fill="#151B29" stroke="#3D7BFF" stroke-width="5"/><rect x="40" y="15" width="36" height="11" rx="5.5" fill="#0A0D14"/><g transform="translate(20 78) skewX(-10)"><g transform="translate(9 -8)" fill="none" stroke="#2D4F9E" stroke-width="1.5"><rect width="13" height="64"/><rect width="70" height="13"/><rect y="25.5" width="54" height="13"/><rect y="51" width="70" height="13"/></g><g transform="translate(4.5 -4)" fill="#2B57B8"><rect width="13" height="64"/><rect width="70" height="13"/><rect y="25.5" width="54" height="13"/><rect y="51" width="70" height="13"/></g><g fill="#3D7BFF"><rect width="13" height="64"/><rect width="70" height="13"/><rect y="25.5" width="54" height="13"/><rect y="51" width="70" height="13"/></g></g></g></svg>
+    <div>
+      <div class="brand-name">ELITE PARTS</div>
+      <div class="brand-sub">Displays · Tampas · Peças</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Monte seu pedido de <b>telas</b></h1>
+    <p>Escolha os modelos e as quantidades. O pedido vai pronto para o nosso WhatsApp.</p>
+  </section>
+
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    <input id="busca" type="search" inputmode="search" placeholder="Buscar modelo (ex.: 14 Pro Max)" aria-label="Buscar modelo" autocomplete="off">
+  </div>
+
+  <div>
+    <div class="section-label"><span>Telas OLED completas com touch</span><span id="atualizado"></span></div>
+  </div>
+  <div class="list" id="lista" role="list"></div>
+
+  <form class="order" id="pedido" novalidate>
+    <h2>SEU PEDIDO</h2>
+    <div class="summary" id="resumo"></div>
+    <label for="nome">Seu nome ou nome da assistência
+      <input id="nome" name="nome" autocomplete="name" placeholder="Ex.: João · JR Cell" required>
+    </label>
+    <label for="cidade">Cidade
+      <input id="cidade" name="cidade" autocomplete="address-level2" placeholder="Ex.: Maceió">
+    </label>
+    <label for="obs">Observação (opcional)
+      <textarea id="obs" name="obs" placeholder="Ex.: preciso para hoje, prefiro Pix..."></textarea>
+    </label>
+    <p class="err" id="erro" role="alert"></p>
+    <button class="send" type="submit" id="enviar">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+      Enviar pedido no WhatsApp
+    </button>
+    <p class="fine">Os preços podem mudar. A Elite Parts confirma valor, disponibilidade e entrega pelo WhatsApp.</p>
+  </form>
+
+  <footer>Peças compatíveis para iPhone · Elite Parts</footer>
+</div>
+
+<div class="bar" id="barra">
+  <div class="bar-in">
+    <div class="bar-info"><small id="barQtd">Nenhuma tela escolhida</small><strong id="barTotal">R$ 0,00</strong></div>
+    <button type="button" id="irPedido" disabled>Fechar pedido</button>
+  </div>
+</div>
+
+<script>
+/* ===== CONFIGURAÇÃO: edite aqui ===== */
+// Número do WhatsApp da loja, só dígitos, com 55 + DDD. Ex.: "5582999999999".
+// Enquanto estiver vazio, o WhatsApp abre para escolher o contato.
+const WHATSAPP = "";
+const ATUALIZADO = "11/11/2026";
+// Tabela de preços (v2). Para mudar preço, troque o número.
+const PRODUTOS = [
+  { id: "12",       modelo: "iPhone 12",         qualidade: "HEX Hard OLED", preco: 200 },
+  { id: "12pm",     modelo: "iPhone 12 Pro Max", qualidade: "DD Hard OLED",  preco: 320 },
+  { id: "13",       modelo: "iPhone 13",         qualidade: "DD Soft OLED",  preco: 320 },
+  { id: "13pm",     modelo: "iPhone 13 Pro Max", qualidade: "DD Soft OLED",  preco: 340 },
+  { id: "14",       modelo: "iPhone 14",         qualidade: "DD Soft OLED",  preco: 320 },
+  { id: "14plus",   modelo: "iPhone 14 Plus",    qualidade: "DD Soft OLED",  preco: 340 },
+  { id: "14pm",     modelo: "iPhone 14 Pro Max", qualidade: "DD Soft OLED",  preco: 390 },
+  { id: "15",       modelo: "iPhone 15",         qualidade: "DD Soft OLED",  preco: 400 },
+  { id: "15plus",   modelo: "iPhone 15 Plus",    qualidade: "DD Soft OLED",  preco: 400 },
+  { id: "15pm",     modelo: "iPhone 15 Pro Max", qualidade: "DD Soft OLED",  preco: 450 },
+  { id: "16",       modelo: "iPhone 16",         qualidade: "DD Soft OLED",  preco: 450 },
+  { id: "16pm",     modelo: "iPhone 16 Pro Max", qualidade: "DD Soft OLED",  preco: 600 },
+  { id: "17",       modelo: "iPhone 17",         qualidade: "DD Hard OLED",  preco: 500 },
+  { id: "17pm",     modelo: "iPhone 17 Pro Max", qualidade: "DD Soft OLED",  preco: 800 },
+];
+/* ==================================== */
+
+const brl = v => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+const $ = id => document.getElementById(id);
+let carrinho = {};
+try { carrinho = JSON.parse(localStorage.getItem("ep-carrinho") || "{}") || {}; } catch (e) { carrinho = {}; }
+const salvar = () => { try { localStorage.setItem("ep-carrinho", JSON.stringify(carrinho)); } catch (e) {} };
+
+$("atualizado").textContent = "Atualizado em " + ATUALIZADO;
+
+function itens() {
+  return PRODUTOS.filter(p => carrinho[p.id] > 0).map(p => ({ ...p, qtd: carrinho[p.id], sub: p.preco * carrinho[p.id] }));
+}
+
+function mudar(id, delta) {
+  const n = Math.max(0, Math.min(99, (carrinho[id] || 0) + delta));
+  if (n) carrinho[id] = n; else delete carrinho[id];
+  salvar(); render();
+}
+
+function render() {
+  const termo = $("busca").value.trim().toLowerCase().replace(/iphone\s*/g, "");
+  const lista = PRODUTOS.filter(p => !termo || p.modelo.toLowerCase().replace("iphone ", "").includes(termo));
+  $("lista").innerHTML = lista.length ? lista.map(p => {
+    const q = carrinho[p.id] || 0;
+    const tipo = /hard/i.test(p.qualidade) ? "hard" : "soft";
+    const [reais] = brl(p.preco).replace("R$", "").trim().split(",");
+    return `<div class="item${q ? " on" : ""}" role="listitem">
+      <div class="name">${p.modelo}<small>Tela para ${p.modelo}</small><span class="badge ${tipo}">${p.qualidade}</span></div>
+      <div class="right">
+        <div class="price"><span>R$</span>${reais},00</div>
+        ${q ? `<div class="stepper"><button type="button" aria-label="Tirar um ${p.modelo}" data-id="${p.id}" data-d="-1">−</button><output aria-live="polite">${q}</output><button type="button" aria-label="Mais um ${p.modelo}" data-id="${p.id}" data-d="1" ${q >= 99 ? "disabled" : ""}>+</button></div>`
+             : `<button type="button" class="add" data-id="${p.id}" data-d="1" aria-label="Adicionar ${p.modelo}">Adicionar</button>`}
+      </div>
+    </div>`;
+  }).join("") : `<div class="empty">Nenhum modelo encontrado. Pergunte no WhatsApp.</div>`;
+
+  const its = itens();
+  const total = its.reduce((s, i) => s + i.sub, 0);
+  const qtd = its.reduce((s, i) => s + i.qtd, 0);
+  $("resumo").innerHTML = its.length
+    ? its.map(i => `<div class="row"><span>${i.qtd}× ${i.modelo} <span style="color:var(--muted)">(${i.qualidade})</span></span><span>${brl(i.sub)}</span></div>`).join("")
+      + `<div class="row total"><span>Total</span><span>${brl(total)}</span></div>`
+    : `<div class="none">Nenhuma tela escolhida ainda. Toque em "Adicionar" na lista acima.</div>`;
+  $("barQtd").textContent = qtd ? `${qtd} ${qtd === 1 ? "tela" : "telas"} no pedido` : "Nenhuma tela escolhida";
+  $("barTotal").textContent = brl(total);
+  $("irPedido").disabled = !qtd;
+}
+
+$("lista").addEventListener("click", e => {
+  const b = e.target.closest("button[data-id]");
+  if (b) mudar(b.dataset.id, Number(b.dataset.d));
+});
+$("busca").addEventListener("input", render);
+$("irPedido").addEventListener("click", () => { $("pedido").scrollIntoView(); setTimeout(() => $("nome").focus({ preventScroll: true }), 300); });
+
+function mensagem() {
+  const its = itens();
+  const total = its.reduce((s, i) => s + i.sub, 0);
+  const linhas = [
+    "Olá, Elite Parts! Quero fazer um pedido:",
+    "",
+    ...its.map(i => `• ${i.qtd}x Tela ${i.modelo} (${i.qualidade}) = ${brl(i.sub)}`),
+    "",
+    `*Total: ${brl(total)}*`,
+    "",
+    `Nome: ${$("nome").value.trim()}`,
+  ];
+  if ($("cidade").value.trim()) linhas.push(`Cidade: ${$("cidade").value.trim()}`);
+  if ($("obs").value.trim()) linhas.push(`Obs.: ${$("obs").value.trim()}`);
+  return linhas.join("\n");
+}
+
+$("pedido").addEventListener("submit", e => {
+  e.preventDefault();
+  $("erro").textContent = "";
+  if (!itens().length) { $("erro").textContent = "Escolha pelo menos uma tela na lista antes de enviar."; $("lista").scrollIntoView(); return; }
+  if (!$("nome").value.trim()) { $("erro").textContent = "Escreva seu nome para a gente saber quem está pedindo."; $("nome").focus(); return; }
+  const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(mensagem())}`;
+  const a = document.createElement("a");
+  a.href = url; a.target = "_blank"; a.rel = "noopener";
+  document.body.appendChild(a); a.click(); a.remove();
+});
+
+render();
+</script>
+
+</html>
