@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA TÉCNICA",
+    "titulo1": "Trocou a tela?",
+    "titulo2": "Salve o True Tone.",
+    "ilustracao": "um",
+    "selos": ["Leia a tela antiga", "Grave na nova", "Teste o True Tone"],
+    "rodape": "DISPLAYS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SEXTA, ALAGOAS",
+      "titulo1": "Sextou,",
+      "titulo2": "técnico!",
+      "texto": "Última bancada cheia da semana. Bora fechar bem com a Elite Parts.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Antes de abrir,",
+      "titulo2": "veja o True Tone.",
+      "texto": "Confira em Ajustes se o True Tone está ativo. Assim você sabe o que entregar de volta ao cliente.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "True Tone sumiu",
+      "titulo2": "depois da troca?",
+      "texto": "No post de hoje: o passo a passo para manter o True Tone na troca de tela.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "De qual cidade",
+      "titulo2": "você atende?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca,<br>Penedo, Rio Largo<br>ou interior?<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Queremos conhecer quem faz assistência em Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Display para",
+      "titulo2": "seu cliente?",
+      "texto": "Mande o modelo do iPhone no WhatsApp e escolha entre Incell e OLED.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
