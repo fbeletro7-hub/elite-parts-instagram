@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "COMPONENTES",
+    "titulo1": "Foto embaçada?",
+    "titulo2": "Olhe a lente.",
+    "ilustracao": "um",
+    "selos": ["Vidro trincado", "Mancha na foto", "Reflexo no flash"],
+    "rodape": "COMPONENTES PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SÁBADO, ALAGOAS",
+      "titulo1": "Bom sábado,",
+      "titulo2": "técnico!",
+      "texto": "Sábado de bancada? Displays, tampas e componentes para iPhone.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Foto ruim?",
+      "titulo2": "Use a lanterna.",
+      "texto": "Ilumine a lente da câmera de lado. Trinca fina aparece na hora.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Foto embaçada",
+      "titulo2": "depois da queda?",
+      "texto": "No post de hoje: como saber se o problema é a lente da câmera.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Quantas lentes",
+      "titulo2": "por semana?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>1 a 5, 5 a 10<br>ou mais de 10?<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Conte para a gente como está a bancada aí em Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Precisa de",
+      "titulo2": "componente?",
+      "texto": "Mande o modelo do iPhone no WhatsApp e peça o que falta na bancada.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
