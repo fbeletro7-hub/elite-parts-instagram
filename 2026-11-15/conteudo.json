@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "COMPONENTES",
+    "titulo1": "Chamada baixa?",
+    "titulo2": "Olhe o auricular.",
+    "ilustracao": "um",
+    "selos": ["Tela de malha suja", "Teste no viva-voz", "Flex do auricular"],
+    "rodape": "COMPONENTES PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "DOMINGO, ALAGOAS",
+      "titulo1": "Bom domingo,",
+      "titulo2": "técnico!",
+      "texto": "Descanse hoje. Amanhã a bancada volta com displays, tampas e componentes.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Som abafado?",
+      "titulo2": "Limpe a malha.",
+      "texto": "Antes de trocar peça, limpe a tela do auricular com escova macia e seca.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Cliente não ouve",
+      "titulo2": "na ligação?",
+      "texto": "No post de hoje: como achar o defeito do auricular em 3 passos.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "De qual cidade",
+      "titulo2": "você atende?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca<br>ou interior?<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Queremos conhecer as bancadas de Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Semana nova,",
+      "titulo2": "peça certa.",
+      "texto": "Mande o modelo do iPhone no WhatsApp e já comece a segunda com a peça.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
