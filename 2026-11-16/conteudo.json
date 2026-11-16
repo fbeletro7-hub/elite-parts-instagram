@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "PEDIDO NO WHATSAPP",
+    "titulo1": "Peça certa",
+    "titulo2": "em 3 informações.",
+    "ilustracao": "tres",
+    "selos": ["Modelo do iPhone", "Tela, tampa ou peça", "Cor e qualidade"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SEGUNDA, ALAGOAS",
+      "titulo1": "Bom dia,",
+      "titulo2": "bancada!",
+      "texto": "Semana começando. Bora deixar os orçamentos da semana prontos.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "DICA DE BANCADA",
+      "titulo1": "Não sabe",
+      "titulo2": "o modelo?",
+      "texto": "Veja em Ajustes, Geral, Sobre. O nome do modelo aparece logo no topo.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Pedido rápido",
+      "titulo2": "e sem erro.",
+      "texto": "No post de hoje: as 3 informações que agilizam seu pedido.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Marque um amigo",
+      "titulo2": "técnico!",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Conhece alguém<br>de bancada em<br>Maceió ou no interior?<br><span style='color:#3D7BFF'>compartilhe o post</span>",
+      "texto": "Quanto mais técnico de Alagoas por aqui, melhor.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDOS",
+      "titulo1": "Mande o modelo,",
+      "titulo2": "a gente separa.",
+      "texto": "Chame no WhatsApp com modelo, peça e cor. Atendimento pelo link da bio.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
