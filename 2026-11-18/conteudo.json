@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA DE BANCADA",
+    "titulo1": "Tela nova",
+    "titulo2": "chegou. E agora?",
+    "ilustracao": "um",
+    "selos": ["Película até o fim", "Segure pelas bordas", "Flex protegido"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "QUARTA, ALAGOAS",
+      "titulo1": "Bom dia,",
+      "titulo2": "bancada!",
+      "texto": "Meio de semana e muita tela para trocar. Hoje o papo é cuidado com a peça nova.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Já perdeu tela",
+      "titulo2": "antes de usar?",
+      "texto": "Riscou, trincou ou dobrou o flex ainda na bancada? Conta pra gente no direct.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "3 cuidados",
+      "titulo2": "com tela nova.",
+      "texto": "No post de hoje: como guardar e manusear o display até a instalação.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "MARCA UM AMIGO",
+      "titulo1": "Conhece um",
+      "titulo2": "técnico em AL?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Marca ele aqui<br>e compartilha o post<br><span style='color:#3D7BFF'>de técnico pra técnico</span>",
+      "texto": "Maceió, Arapiraca, Penedo, Palmeira dos Índios e todo o interior.",
+      "selos": []
+    },
+    {
+      "etiqueta": "DISPLAYS",
+      "titulo1": "Precisa de tela?",
+      "titulo2": "Fala com a gente.",
+      "texto": "Mande o modelo do iPhone e a qualidade que o cliente quer. Atendimento pelo link da bio.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
