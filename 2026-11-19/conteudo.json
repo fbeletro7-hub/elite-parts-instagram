@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA TÉCNICA",
+    "titulo1": "True Tone sumiu",
+    "titulo2": "depois da troca?",
+    "ilustracao": "um",
+    "selos": ["É normal na troca", "Dados da tela original", "Cliente avisado antes"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "QUINTA, ALAGOAS",
+      "titulo1": "Bom dia,",
+      "titulo2": "Maceió!",
+      "texto": "Quinta de bancada cheia. Hoje o papo é aquela função que some depois da troca de tela.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Cliente já",
+      "titulo2": "reclamou disso?",
+      "texto": "Trocou a tela e o cliente voltou dizendo que a cor mudou ou o True Tone sumiu? Conta no direct.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "True Tone",
+      "titulo2": "explicado.",
+      "texto": "No post de hoje: por que ele some na troca e como evitar a reclamação do cliente.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Você usa",
+      "titulo2": "programador?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Sim, uso sempre<br>ou ainda não?<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Queremos saber como é a bancada de quem faz assistência em Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "DISPLAYS",
+      "titulo1": "Precisa de tela?",
+      "titulo2": "Manda o modelo.",
+      "texto": "Diga o modelo do iPhone e a qualidade que o cliente quer. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
