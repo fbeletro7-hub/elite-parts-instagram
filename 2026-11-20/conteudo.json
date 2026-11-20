@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA DE BANCADA",
+    "titulo1": "Face ID parou",
+    "titulo2": "depois da troca?",
+    "ilustracao": "um",
+    "selos": ["Flex do sensor inteiro", "Sem calor no topo", "Teste antes da cola"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SEXTA, ALAGOAS",
+      "titulo1": "Sextou na",
+      "titulo2": "bancada!",
+      "texto": "Último dia útil da semana e hoje o assunto é o Face ID na troca de tela.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Já perdeu um",
+      "titulo2": "Face ID?",
+      "texto": "Trocou a tela e o desbloqueio facial parou de funcionar? Conta no direct como foi.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Face ID na",
+      "titulo2": "troca de tela.",
+      "texto": "No post de hoje: 3 cuidados para o Face ID continuar funcionando depois do serviço.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Você atende",
+      "titulo2": "onde em AL?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca<br>ou interior?<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Queremos conhecer as assistências de todo o estado de Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "DISPLAYS",
+      "titulo1": "Precisa de tela?",
+      "titulo2": "Chama a gente.",
+      "texto": "Mande o modelo do iPhone e a qualidade que o cliente quer. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
