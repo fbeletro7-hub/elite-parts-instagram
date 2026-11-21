@@ -26,6 +26,15 @@ O objetivo principal é crescer seguidores no estado de Alagoas (técnicos, assi
 - Uma vez por semana, story pedindo para marcar um amigo técnico de Alagoas e compartilhar o post.
 - A Elite Parts NÃO tem loja física. Atendimento é pelo WhatsApp (link da bio). Nunca citar endereço, loja ou "venha nos visitar". Entrega e prazo em Alagoas só se o dono confirmar.
 
+## Posicionamento: loja E distribuidora
+A Elite Parts é **distribuidora de peças para iPhone** (displays, tampas traseiras e componentes), além de loja. Isso deve aparecer em tudo:
+- Toda legenda cita a Elite como distribuidora pelo menos uma vez, de forma natural (ex.: "Distribuidora de peças para iPhone em Alagoas", "A Elite Parts é distribuidora: atende assistências e lojistas").
+- Pelo menos 1 story por dia e 1 selo, etiqueta ou rodapé por semana no feed falam em "distribuidora" (ex.: etiqueta "DISTRIBUIDORA", rodapé "DISTRIBUIDORA DE PEÇAS PARA IPHONE").
+- Uma vez por semana, um post de feed focado no lado distribuidora: atendimento a assistências, lojistas e revendedores de Alagoas, pedidos para reposição de bancada.
+- Hashtags: incluir sempre #distribuidora ou #distribuidoradepecas junto com as de produto e as locais.
+- Mesmas regras de sempre: nunca inventar preço, preço de atacado, quantidade mínima, prazo, garantia ou estoque. Falar em atacado/quantidade só se o dono confirmar.
+- Bio sugerida (o dono altera à mão no Instagram): "Distribuidora de peças para iPhone | Displays, tampas e componentes | Alagoas | Pedidos no WhatsApp 👇"
+
 ## Regras da marca
 - Fundo escuro #0A0D14, azul #3D7BFF, texto #F2F5FA, cinza #7F8BA3, fonte Michroma (o gerador já aplica).
 - Português do Brasil, tom direto, de técnico para técnico. Legenda: gancho, 2–4 linhas de valor, chamada para WhatsApp ("link da bio"), 8–15 hashtags.
