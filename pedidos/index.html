@@ -60,7 +60,7 @@ header.brand svg { width: 38px; height: auto; flex: none; }
 .search svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); }
 input:focus-visible, textarea:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.section-label { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 600; display: flex; justify-content: space-between; }
+.section-label { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 600; display: flex; justify-content: space-between; gap: 10px; white-space: nowrap; }
 
 .list { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface); }
 .item { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; padding: 14px 16px; border-top: 1px solid var(--line); align-items: center; }
@@ -167,6 +167,14 @@ form.order h2 b { color: var(--accent); }
 .send { box-shadow: 0 8px 28px rgba(37,211,102,.35); font-size: 17px; }
 .bar button { box-shadow: 0 6px 22px rgba(61,123,255,.5); }
 .bar-info strong { font-size: 22px; font-weight: 900; }
+
+.tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 5px; border-radius: 14px; background: rgba(18,24,38,.9); border: 1px solid var(--line); }
+.tab { border: 0; border-radius: 10px; padding: 12px; font: inherit; font-weight: 900; font-size: 16px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: transparent; cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--accent); color: #fff; box-shadow: 0 4px 18px rgba(61,123,255,.5); }
+.badge.tampa { color: #C9D3E6; background: rgba(127,139,163,.14); border-color: rgba(127,139,163,.4); }
+.price.consult { font-size: 14px; font-weight: 800; color: var(--accent); letter-spacing: 0; }
+.cor { display: block; margin-top: 8px; width: 100%; max-width: 190px; font: inherit; font-size: 15px; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; }
+footer a { color: var(--accent); font-weight: 700; }
 </style>
 
 <div class="wrap">
@@ -179,11 +187,16 @@ form.order h2 b { color: var(--accent); }
   </header>
 
   <section class="hero">
-    <h1>Peça suas <b>telas</b></h1>
-    <p>Escolha os modelos e as quantidades. O pedido vai pronto para o nosso WhatsApp.</p>
+    <h1>Faça seu <b>pedido</b></h1>
+    <p>Displays e tampas para iPhone. Escolha, monte o pedido e ele vai pronto para o nosso WhatsApp.</p>
   </section>
 
-  <div class="promo">
+  <div class="tabs" role="tablist">
+    <button type="button" class="tab" role="tab" data-aba="display" aria-selected="true">Displays</button>
+    <button type="button" class="tab" role="tab" data-aba="tampa" aria-selected="false">Tampas</button>
+  </div>
+
+  <div class="promo" id="promo">
     <div class="dd">DD</div>
     <div><strong>MARCA DD · SOFT OLED</strong><span>Cores vivas, tela flexível e toque preciso, mais próxima da original</span></div>
   </div>
@@ -194,14 +207,14 @@ form.order h2 b { color: var(--accent); }
   </div>
 
   <div>
-    <div class="section-label"><span>Telas OLED com touch</span><span id="atualizado"></span></div>
+    <div class="section-label"><span id="rotulo">Telas OLED com touch</span><span id="atualizado"></span></div>
   </div>
   <div class="list" id="lista" role="list"></div>
 
   <form class="order" id="pedido" novalidate>
     <h2>SEU <b>PEDIDO</b></h2>
     <div class="summary" id="resumo"></div>
-    <label for="nome">Seu nome ou nome da assistência
+    <label for="nome">Seu nome ou da sua assistência
       <input id="nome" name="nome" autocomplete="name" placeholder="Ex.: João · JR Cell" required>
     </label>
     <label for="cidade">Cidade
@@ -218,7 +231,7 @@ form.order h2 b { color: var(--accent); }
     <p class="fine">Os preços podem mudar. A Elite Parts confirma valor, disponibilidade e entrega pelo WhatsApp.</p>
   </form>
 
-  <footer>Peças compatíveis para iPhone · Elite Parts</footer>
+  <footer>Peças compatíveis para iPhone · Elite Parts<br>WhatsApp: <a id="zap" href="https://wa.me/5582998263519" target="_blank" rel="noopener">(82) 99826-3519</a></footer>
 </div>
 
 <div class="bar" id="barra">
@@ -230,72 +243,98 @@ form.order h2 b { color: var(--accent); }
 
 <script>
 /* ===== CONFIGURAÇÃO: edite aqui ===== */
-// Número do WhatsApp da loja, só dígitos, com 55 + DDD. Ex.: "5582999999999".
-// Enquanto estiver vazio, o WhatsApp abre para escolher o contato.
-const WHATSAPP = "";
+// Número do WhatsApp da loja, só dígitos, com 55 + DDD.
+const WHATSAPP = "5582998263519";
 const ATUALIZADO = "11/11/2026";
-// Tabela de preços (v2). Para mudar preço, troque o número.
-const PRODUTOS = [
-  { id: "12",       modelo: "iPhone 12",         qualidade: "HEX Hard OLED", preco: 200 },
-  { id: "12pm",     modelo: "iPhone 12 Pro Max", qualidade: "DD Hard OLED",  preco: 320 },
-  { id: "13",       modelo: "iPhone 13",         qualidade: "DD Soft OLED",  preco: 320 },
-  { id: "13pm",     modelo: "iPhone 13 Pro Max", qualidade: "DD Soft OLED",  preco: 340 },
-  { id: "14",       modelo: "iPhone 14",         qualidade: "DD Soft OLED",  preco: 320 },
-  { id: "14plus",   modelo: "iPhone 14 Plus",    qualidade: "DD Soft OLED",  preco: 340 },
-  { id: "14pm",     modelo: "iPhone 14 Pro Max", qualidade: "DD Soft OLED",  preco: 390 },
-  { id: "15",       modelo: "iPhone 15",         qualidade: "DD Soft OLED",  preco: 400 },
-  { id: "15plus",   modelo: "iPhone 15 Plus",    qualidade: "DD Soft OLED",  preco: 400 },
-  { id: "15pm",     modelo: "iPhone 15 Pro Max", qualidade: "DD Soft OLED",  preco: 450 },
-  { id: "16",       modelo: "iPhone 16",         qualidade: "DD Soft OLED",  preco: 450 },
-  { id: "16pm",     modelo: "iPhone 16 Pro Max", qualidade: "DD Soft OLED",  preco: 600 },
-  { id: "17",       modelo: "iPhone 17",         qualidade: "DD Hard OLED",  preco: 500 },
-  { id: "17pm",     modelo: "iPhone 17 Pro Max", qualidade: "DD Soft OLED",  preco: 800 },
+// Displays: tabela de preços v2. Para mudar preço, troque o número.
+const DISPLAYS = [
+  { id: "12",     modelo: "iPhone 12",         qualidade: "HEX Hard OLED", preco: 200 },
+  { id: "12pm",   modelo: "iPhone 12 Pro Max", qualidade: "DD Hard OLED",  preco: 320 },
+  { id: "13",     modelo: "iPhone 13",         qualidade: "DD Soft OLED",  preco: 320 },
+  { id: "13pm",   modelo: "iPhone 13 Pro Max", qualidade: "DD Soft OLED",  preco: 340 },
+  { id: "14",     modelo: "iPhone 14",         qualidade: "DD Soft OLED",  preco: 320 },
+  { id: "14plus", modelo: "iPhone 14 Plus",    qualidade: "DD Soft OLED",  preco: 340 },
+  { id: "14pm",   modelo: "iPhone 14 Pro Max", qualidade: "DD Soft OLED",  preco: 390 },
+  { id: "15",     modelo: "iPhone 15",         qualidade: "DD Soft OLED",  preco: 400 },
+  { id: "15plus", modelo: "iPhone 15 Plus",    qualidade: "DD Soft OLED",  preco: 400 },
+  { id: "15pm",   modelo: "iPhone 15 Pro Max", qualidade: "DD Soft OLED",  preco: 450 },
+  { id: "16",     modelo: "iPhone 16",         qualidade: "DD Soft OLED",  preco: 450 },
+  { id: "16pm",   modelo: "iPhone 16 Pro Max", qualidade: "DD Soft OLED",  preco: 600 },
+  { id: "17",     modelo: "iPhone 17",         qualidade: "DD Hard OLED",  preco: 500 },
+  { id: "17pm",   modelo: "iPhone 17 Pro Max", qualidade: "DD Soft OLED",  preco: 800 },
 ];
+// Tampas traseiras: preco null = "a consultar". Quando tiver o preço, troque null pelo valor (ex.: 120).
+const TAMPAS = [
+  "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max",
+  "iPhone 12", "iPhone 12 Pro", "iPhone 12 Pro Max",
+  "iPhone 13", "iPhone 13 Pro", "iPhone 13 Pro Max",
+  "iPhone 14", "iPhone 14 Plus", "iPhone 14 Pro", "iPhone 14 Pro Max",
+  "iPhone 15", "iPhone 15 Plus", "iPhone 15 Pro", "iPhone 15 Pro Max",
+  "iPhone 16", "iPhone 16 Plus", "iPhone 16 Pro", "iPhone 16 Pro Max",
+].map(m => ({ id: "t-" + m.replace(/\D+/g, "") + m.replace(/[^A-Za-z]/g, "").replace("iPhone", "").toLowerCase(), modelo: m, preco: null }));
 /* ==================================== */
 
+const PRODUTOS = [
+  ...DISPLAYS.map(p => ({ ...p, cat: "display", nome: "Tela", tag: p.qualidade })),
+  ...TAMPAS.map(p => ({ ...p, cat: "tampa", nome: "Tampa traseira", tag: "Tampa traseira" })),
+];
 const brl = v => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 const $ = id => document.getElementById(id);
-let carrinho = {};
-try { carrinho = JSON.parse(localStorage.getItem("ep-carrinho") || "{}") || {}; } catch (e) { carrinho = {}; }
-const salvar = () => { try { localStorage.setItem("ep-carrinho", JSON.stringify(carrinho)); } catch (e) {} };
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+let carrinho = {}, cores = {}, aba = "display";
+try { carrinho = JSON.parse(localStorage.getItem("ep-carrinho") || "{}") || {}; cores = JSON.parse(localStorage.getItem("ep-cores") || "{}") || {}; } catch (e) {}
+const salvar = () => { try { localStorage.setItem("ep-carrinho", JSON.stringify(carrinho)); localStorage.setItem("ep-cores", JSON.stringify(cores)); } catch (e) {} };
 
-$("atualizado").textContent = "Atualizado em " + ATUALIZADO;
+$("atualizado").textContent = "Atualizado " + ATUALIZADO.slice(0, 5);
 
 function itens() {
-  return PRODUTOS.filter(p => carrinho[p.id] > 0).map(p => ({ ...p, qtd: carrinho[p.id], sub: p.preco * carrinho[p.id] }));
+  return PRODUTOS.filter(p => carrinho[p.id] > 0).map(p => ({ ...p, qtd: carrinho[p.id], sub: p.preco == null ? null : p.preco * carrinho[p.id] }));
 }
-
 function mudar(id, delta) {
   const n = Math.max(0, Math.min(99, (carrinho[id] || 0) + delta));
-  if (n) carrinho[id] = n; else delete carrinho[id];
+  if (n) carrinho[id] = n; else { delete carrinho[id]; delete cores[id]; }
   salvar(); render();
+}
+function precoHtml(p) {
+  if (p.preco == null) return `<div class="price consult">A consultar</div>`;
+  const [reais] = brl(p.preco).replace("R$", "").trim().split(",");
+  return `<div class="price"><span>R$</span>${reais}<i>,00</i></div>`;
 }
 
 function render() {
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.aba === aba));
+  $("promo").hidden = aba !== "display";
+  $("rotulo").textContent = aba === "display" ? "Telas OLED com touch" : "Tampas traseiras para iPhone";
+  $("atualizado").hidden = aba !== "display";
   const termo = $("busca").value.trim().toLowerCase().replace(/iphone\s*/g, "");
-  const lista = PRODUTOS.filter(p => !termo || p.modelo.toLowerCase().replace("iphone ", "").includes(termo));
+  const lista = PRODUTOS.filter(p => p.cat === aba && (!termo || p.modelo.toLowerCase().replace("iphone ", "").includes(termo)));
   $("lista").innerHTML = lista.length ? lista.map(p => {
     const q = carrinho[p.id] || 0;
-    const tipo = /hard/i.test(p.qualidade) ? "hard" : "soft";
-    const [reais] = brl(p.preco).replace("R$", "").trim().split(",");
+    const tipo = p.cat === "tampa" ? "tampa" : /hard/i.test(p.qualidade) ? "hard" : "soft";
+    const cor = p.cat === "tampa" && q ? `<input class="cor" data-cor="${p.id}" value="${esc(cores[p.id] || "")}" placeholder="Cor (ex.: preta, azul)" aria-label="Cor da tampa do ${p.modelo}" maxlength="30">` : "";
     return `<div class="item${q ? " on" : ""}" role="listitem">
-      <div class="name">${p.modelo}<small>Tela para ${p.modelo}</small><span class="badge ${tipo}">${p.qualidade}</span></div>
+      <div class="name">${p.modelo}<small>${p.nome} para ${p.modelo}</small><span class="badge ${tipo}">${p.tag}</span>${cor}</div>
       <div class="right">
-        <div class="price"><span>R$</span>${reais}<i>,00</i></div>
-        ${q ? `<div class="stepper"><button type="button" aria-label="Tirar um ${p.modelo}" data-id="${p.id}" data-d="-1">−</button><output aria-live="polite">${q}</output><button type="button" aria-label="Mais um ${p.modelo}" data-id="${p.id}" data-d="1" ${q >= 99 ? "disabled" : ""}>+</button></div>`
-             : `<button type="button" class="add" data-id="${p.id}" data-d="1" aria-label="Adicionar ${p.modelo}">Adicionar</button>`}
+        ${precoHtml(p)}
+        ${q ? `<div class="stepper"><button type="button" aria-label="Tirar um" data-id="${p.id}" data-d="-1">−</button><output aria-live="polite">${q}</output><button type="button" aria-label="Mais um" data-id="${p.id}" data-d="1" ${q >= 99 ? "disabled" : ""}>+</button></div>`
+             : `<button type="button" class="add" data-id="${p.id}" data-d="1" aria-label="Adicionar ${p.nome} ${p.modelo}">Adicionar</button>`}
       </div>
     </div>`;
   }).join("") : `<div class="empty">Nenhum modelo encontrado. Pergunte no WhatsApp.</div>`;
+  resumo();
+}
 
+function resumo() {
   const its = itens();
-  const total = its.reduce((s, i) => s + i.sub, 0);
+  const total = its.reduce((s, i) => s + (i.sub || 0), 0);
+  const consultar = its.some(i => i.sub == null);
   const qtd = its.reduce((s, i) => s + i.qtd, 0);
   $("resumo").innerHTML = its.length
-    ? its.map(i => `<div class="row"><span>${i.qtd}× ${i.modelo} <span style="color:var(--muted)">(${i.qualidade})</span></span><span>${brl(i.sub)}</span></div>`).join("")
-      + `<div class="row total"><span>Total</span><span>${brl(total)}</span></div>`
-    : `<div class="none">Nenhuma tela escolhida ainda. Toque em "Adicionar" na lista acima.</div>`;
-  $("barQtd").textContent = qtd ? `${qtd} ${qtd === 1 ? "tela" : "telas"} no pedido` : "Nenhuma tela escolhida";
+    ? its.map(i => `<div class="row"><span>${i.qtd}× ${i.nome} ${i.modelo} <span style="color:var(--muted)">(${i.cat === "tampa" ? esc(cores[i.id] || "cor a definir") : i.qualidade})</span></span><span>${i.sub == null ? "a consultar" : brl(i.sub)}</span></div>`).join("")
+      + `<div class="row total"><span>Total${consultar ? " das telas" : ""}</span><span>${brl(total)}</span></div>`
+      + (consultar ? `<div class="none">O valor das tampas a Elite Parts passa no WhatsApp.</div>` : "")
+    : `<div class="none">Nada escolhido ainda. Toque em "Adicionar" na lista acima.</div>`;
+  $("barQtd").textContent = qtd ? `${qtd} ${qtd === 1 ? "peça" : "peças"} no pedido${consultar ? " · tampas a consultar" : ""}` : "Nenhuma peça escolhida";
   $("barTotal").textContent = brl(total);
   $("irPedido").disabled = !qtd;
 }
@@ -304,21 +343,22 @@ $("lista").addEventListener("click", e => {
   const b = e.target.closest("button[data-id]");
   if (b) mudar(b.dataset.id, Number(b.dataset.d));
 });
+$("lista").addEventListener("input", e => {
+  if (e.target.dataset.cor) { cores[e.target.dataset.cor] = e.target.value; salvar(); resumo(); }
+});
+document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => { aba = t.dataset.aba; $("busca").value = ""; render(); }));
 $("busca").addEventListener("input", render);
 $("irPedido").addEventListener("click", () => { $("pedido").scrollIntoView(); setTimeout(() => $("nome").focus({ preventScroll: true }), 300); });
 
 function mensagem() {
   const its = itens();
-  const total = its.reduce((s, i) => s + i.sub, 0);
-  const linhas = [
-    "Olá, Elite Parts! Quero fazer um pedido:",
-    "",
-    ...its.map(i => `• ${i.qtd}x Tela ${i.modelo} (${i.qualidade}) = ${brl(i.sub)}`),
-    "",
-    `*Total: ${brl(total)}*`,
-    "",
-    `Nome: ${$("nome").value.trim()}`,
-  ];
+  const telas = its.filter(i => i.cat === "display"), tampas = its.filter(i => i.cat === "tampa");
+  const total = its.reduce((s, i) => s + (i.sub || 0), 0);
+  const linhas = ["Olá, Elite Parts! Quero fazer um pedido:", ""];
+  if (telas.length) linhas.push("*Telas*", ...telas.map(i => `• ${i.qtd}x Tela ${i.modelo} (${i.qualidade}) = ${brl(i.sub)}`), "");
+  if (tampas.length) linhas.push("*Tampas traseiras*", ...tampas.map(i => `• ${i.qtd}x Tampa ${i.modelo}${cores[i.id] && cores[i.id].trim() ? ` - cor ${cores[i.id].trim()}` : ""}${i.sub == null ? " (valor a consultar)" : ` = ${brl(i.sub)}`}`), "");
+  if (telas.length) linhas.push(`*Total${tampas.some(i => i.sub == null) ? " das telas" : ""}: ${brl(total)}*`, "");
+  linhas.push(`Nome: ${$("nome").value.trim()}`);
   if ($("cidade").value.trim()) linhas.push(`Cidade: ${$("cidade").value.trim()}`);
   if ($("obs").value.trim()) linhas.push(`Obs.: ${$("obs").value.trim()}`);
   return linhas.join("\n");
@@ -327,9 +367,10 @@ function mensagem() {
 $("pedido").addEventListener("submit", e => {
   e.preventDefault();
   $("erro").textContent = "";
-  if (!itens().length) { $("erro").textContent = "Escolha pelo menos uma tela na lista antes de enviar."; $("lista").scrollIntoView(); return; }
-  if (!$("nome").value.trim()) { $("erro").textContent = "Escreva seu nome para a gente saber quem está pedindo."; $("nome").focus(); return; }
+  if (!itens().length) { $("erro").textContent = "Escolha pelo menos uma peça na lista antes de enviar."; $("lista").scrollIntoView(); return; }
+  if (!$("nome").value.trim()) { $("erro").textContent = "Escreva seu nome ou o nome da assistência para a gente saber quem está pedindo."; $("nome").focus(); return; }
   const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(mensagem())}`;
+  $("zap").href = `https://wa.me/${WHATSAPP}`;
   const a = document.createElement("a");
   a.href = url; a.target = "_blank"; a.rel = "noopener";
   document.body.appendChild(a); a.click(); a.remove();

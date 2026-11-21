@@ -1,10 +1,11 @@
 # App de pedidos de telas (WhatsApp)
 
-Página única: o cliente escolhe as telas, informa nome e cidade e toca em "Enviar pedido no WhatsApp". O WhatsApp abre com a mensagem do pedido pronta para o número da loja.
+Página única para técnicos: o cliente escolhe displays e tampas, informa nome e cidade e toca em "Enviar pedido no WhatsApp". O WhatsApp abre com a mensagem do pedido pronta para o número da loja.
 
 ## Como editar
 Tudo fica no começo do `<script>` em `index.html`:
-- `WHATSAPP`: número da loja só com dígitos (55 + DDD + número). Ex.: `5582999999999`.
+- `WHATSAPP`: número da loja só com dígitos (55 + DDD + número). Hoje: `5582998263519`.
+- `TAMPAS`: modelos de tampa traseira. Preço `null` aparece como "A consultar"; troque pelo valor quando quiser mostrar o preço.
 - `ATUALIZADO`: data da tabela.
 - `PRODUTOS`: modelos, qualidade e preço.
 
