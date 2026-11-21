@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#0A0D14">
 <title>Elite Parts Pedidos</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Monte seu pedido de telas para iPhone e envie direto no WhatsApp da Elite Parts.">
+<meta name="description" content="Elite Parts Distribuidora: monte seu pedido de displays e tampas para iPhone e envie direto no WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@400;500;600;700;800;900&display=swap">
 <style>
@@ -175,6 +175,7 @@ form.order h2 b { color: var(--accent); }
 .price.consult { font-size: 14px; font-weight: 800; color: var(--accent); letter-spacing: 0; }
 .cor { display: block; margin-top: 8px; width: 100%; max-width: 190px; font: inherit; font-size: 15px; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; }
 footer a { color: var(--accent); font-weight: 700; }
+.chip { display: inline-block; margin-bottom: 12px; padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: #fff; background: rgba(61,123,255,.18); border: 1px solid rgba(61,123,255,.6); box-shadow: 0 0 18px rgba(61,123,255,.35); }
 </style>
 
 <div class="wrap">
@@ -182,13 +183,14 @@ footer a { color: var(--accent); font-weight: 700; }
     <svg viewBox="0 0 140 240" aria-hidden="true"><g transform="translate(12 13)"><rect x="0" y="0" width="116" height="214" rx="28" fill="#151B29" stroke="#3D7BFF" stroke-width="5"/><rect x="40" y="15" width="36" height="11" rx="5.5" fill="#0A0D14"/><g transform="translate(20 78) skewX(-10)"><g transform="translate(9 -8)" fill="none" stroke="#2D4F9E" stroke-width="1.5"><rect width="13" height="64"/><rect width="70" height="13"/><rect y="25.5" width="54" height="13"/><rect y="51" width="70" height="13"/></g><g transform="translate(4.5 -4)" fill="#2B57B8"><rect width="13" height="64"/><rect width="70" height="13"/><rect y="25.5" width="54" height="13"/><rect y="51" width="70" height="13"/></g><g fill="#3D7BFF"><rect width="13" height="64"/><rect width="70" height="13"/><rect y="25.5" width="54" height="13"/><rect y="51" width="70" height="13"/></g></g></g></svg>
     <div>
       <div class="brand-name">ELITE PARTS</div>
-      <div class="brand-sub">Displays · Tampas · Peças</div>
+      <div class="brand-sub">Distribuidora · Displays · Tampas</div>
     </div>
   </header>
 
   <section class="hero">
+    <div class="chip">Distribuidora de peças para iPhone</div>
     <h1>Faça seu <b>pedido</b></h1>
-    <p>Displays e tampas para iPhone. Escolha, monte o pedido e ele vai pronto para o nosso WhatsApp.</p>
+    <p>Displays e tampas para iPhone, para técnicos e lojistas. Monte o pedido e ele vai pronto para o nosso WhatsApp.</p>
   </section>
 
   <div class="tabs" role="tablist">
@@ -214,7 +216,7 @@ footer a { color: var(--accent); font-weight: 700; }
   <form class="order" id="pedido" novalidate>
     <h2>SEU <b>PEDIDO</b></h2>
     <div class="summary" id="resumo"></div>
-    <label for="nome">Seu nome ou da sua assistência
+    <label for="nome">Seu nome, assistência ou loja
       <input id="nome" name="nome" autocomplete="name" placeholder="Ex.: João · JR Cell" required>
     </label>
     <label for="cidade">Cidade
@@ -228,10 +230,10 @@ footer a { color: var(--accent); font-weight: 700; }
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
       Enviar pedido no WhatsApp
     </button>
-    <p class="fine">Os preços podem mudar. A Elite Parts confirma valor, disponibilidade e entrega pelo WhatsApp.</p>
+    <p class="fine">Os preços podem mudar. A Elite Parts Distribuidora confirma valor, disponibilidade e entrega pelo WhatsApp.</p>
   </form>
 
-  <footer>Peças compatíveis para iPhone · Elite Parts<br>WhatsApp: <a id="zap" href="https://wa.me/5582998263519" target="_blank" rel="noopener">(82) 99826-3519</a></footer>
+  <footer>Elite Parts Distribuidora · Peças compatíveis para iPhone<br>WhatsApp: <a id="zap" href="https://wa.me/5582998263519" target="_blank" rel="noopener">(82) 99826-3519</a></footer>
 </div>
 
 <div class="bar" id="barra">
@@ -354,7 +356,7 @@ function mensagem() {
   const its = itens();
   const telas = its.filter(i => i.cat === "display"), tampas = its.filter(i => i.cat === "tampa");
   const total = its.reduce((s, i) => s + (i.sub || 0), 0);
-  const linhas = ["Olá, Elite Parts! Quero fazer um pedido:", ""];
+  const linhas = ["Olá, Elite Parts Distribuidora! Quero fazer um pedido:", ""];
   if (telas.length) linhas.push("*Telas*", ...telas.map(i => `• ${i.qtd}x Tela ${i.modelo} (${i.qualidade}) = ${brl(i.sub)}`), "");
   if (tampas.length) linhas.push("*Tampas traseiras*", ...tampas.map(i => `• ${i.qtd}x Tampa ${i.modelo}${cores[i.id] && cores[i.id].trim() ? ` - cor ${cores[i.id].trim()}` : ""}${i.sub == null ? " (valor a consultar)" : ` = ${brl(i.sub)}`}`), "");
   if (telas.length) linhas.push(`*Total${tampas.some(i => i.sub == null) ? " das telas" : ""}: ${brl(total)}*`, "");

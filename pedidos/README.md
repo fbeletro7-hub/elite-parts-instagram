@@ -1,4 +1,4 @@
-# App de pedidos de telas (WhatsApp)
+# App de pedidos da Elite Parts Distribuidora (WhatsApp)
 
 Página única para técnicos: o cliente escolhe displays e tampas, informa nome e cidade e toca em "Enviar pedido no WhatsApp". O WhatsApp abre com a mensagem do pedido pronta para o número da loja.
 
