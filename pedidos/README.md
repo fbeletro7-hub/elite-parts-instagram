@@ -20,4 +20,4 @@ Tudo fica no começo do `<script>` em `index.html`:
 5. Volte em Settings > Pages > Custom domain, digite o domínio, salve e marque "Enforce HTTPS" quando liberar.
 
 ## Tampas
-A lista `TAMPAS` tem só o que está em estoque, com as cores disponíveis. Preço = custo + 100%, arredondado pra cima.
+A lista `TAMPAS` tem só o que está em estoque, com as cores disponíveis. Preço = custo + 100%, arredondado pra cima de 5 em 5 (21 vira 25).
