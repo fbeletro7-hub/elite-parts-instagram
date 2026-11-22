@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "TUDO PARA A TROCA",
+    "titulo1": "Tela, tampa e peça",
+    "titulo2": "no mesmo pedido.",
+    "ilustracao": "tres",
+    "selos": ["Displays", "Tampas traseiras", "Componentes"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SÁBADO, ALAGOAS",
+      "titulo1": "Bom sábado,",
+      "titulo2": "bancada!",
+      "texto": "Sábado de serviço também? Hoje o assunto é o que dá para pedir num só atendimento.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Qual iPhone mais",
+      "titulo2": "chega pra você?",
+      "texto": "Conta no direct o modelo que mais apareceu na sua bancada nesta semana.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Tela, tampa e",
+      "titulo2": "componentes.",
+      "texto": "No post de hoje: as peças para iPhone que você pede de uma vez, num só atendimento.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Sábado aberto",
+      "titulo2": "aí em AL?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Sua assistência<br>abre aos sábados?<br><span style='color:#3D7BFF'>responda no direct</span>",
+      "texto": "Queremos conhecer a rotina das assistências de Maceió e do interior.",
+      "selos": []
+    },
+    {
+      "etiqueta": "PEDIDO NO WHATSAPP",
+      "titulo1": "Monte seu",
+      "titulo2": "pedido.",
+      "texto": "Mande o modelo do iPhone e o que precisa: tela, tampa ou componente. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "um",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}

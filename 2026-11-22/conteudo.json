@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA DE BANCADA",
+    "titulo1": "Troca de tampa",
+    "titulo2": "sem retrabalho.",
+    "ilustracao": "tampas",
+    "selos": ["Bobina de carga inteira", "Lente protegida", "Cola bem distribuída"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "DOMINGO, ALAGOAS",
+      "titulo1": "Bom domingo,",
+      "titulo2": "técnico!",
+      "texto": "Dia de descanso, mas a dica de hoje é para a bancada: troca de tampa traseira.",
+      "ilustracao": "tampas",
+      "selos": []
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Quantas tampas",
+      "titulo2": "por semana?",
+      "texto": "Quantas trocas de tampa traseira você faz na semana? Responda no direct.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Tampa traseira",
+      "titulo2": "sem retrabalho.",
+      "texto": "No post de hoje: 3 cuidados para a troca de tampa sair certa de primeira.",
+      "ilustracao": "tampas",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Compartilha",
+      "titulo2": "com um colega.",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Conhece um técnico<br>em Maceió ou<br>no interior?<br><span style='color:#3D7BFF'>manda o post pra ele</span>",
+      "texto": "Dica boa é para circular entre as assistências de Alagoas.",
+      "selos": []
+    },
+    {
+      "etiqueta": "TAMPAS TRASEIRAS",
+      "titulo1": "Pedido de tampa?",
+      "titulo2": "Fala com a gente.",
+      "texto": "Mande o modelo do iPhone e a cor da tampa. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "tampas",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
