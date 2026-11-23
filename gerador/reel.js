@@ -118,7 +118,7 @@ function visual(c,lt,t,primeira){
       return '<div style="position:absolute;left:84px;right:84px;top:760px">'+it.map((s,i)=>{
         const ki=primeira&&i===0?1:ease((lt-0.6-1.0*i)/0.4), kc=pop((lt-0.8-1.0*i)/0.35);
         return '<div style="display:flex;align-items:center;gap:36px;padding:34px 0;border-top:3px solid #3D7BFF44;opacity:'+ki+';transform:translateX('+(1-ki)*-80+'px)">'+
-         '<svg viewBox="0 0 100 100" style="width:110px;height:110px;flex:none;transform:scale('+kc+')"><circle cx="50" cy="50" r="46" fill="#3D7BFF"/><path d="M28 52 L44 67 L73 36" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>'+
+         '<svg viewBox="0 0 100 100" style="width:110px;height:110px;flex:none;transform:scale('+kc+')"><circle cx="50" cy="50" r="46" fill="'+E.destaque+'"/><path d="M28 52 L44 67 L73 36" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>'+
          '<div style="font:700 50px/1.25 Inter;color:'+E.texto+'">'+s+'</div></div>';
       }).join('')+'</div>'; }
     case 'pergunta': { const s=1+Math.sin(t*4)*.04;

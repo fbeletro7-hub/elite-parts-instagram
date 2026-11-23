@@ -1,0 +1,13 @@
+{
+  "reel": {
+    "estilo": "azul",
+    "musica": "b",
+    "cenas": [
+      {"etiqueta": "QUAL VOCÊ MONTA?", "titulo": ["Incell", "*ou OLED?*"], "texto": "O cliente percebe a diferença.", "visual": "pergunta"},
+      {"etiqueta": "INCELL", "titulo": ["Preço mais", "*em conta.*"], "texto": "Boa para o cliente que quer economizar.", "visual": "celular"},
+      {"etiqueta": "OLED", "titulo": ["Tela mais", "*perto da original.*"], "visual": "lista", "itens": ["Preto de verdade", "Cores mais vivas", "Tela mais fina"]},
+      {"etiqueta": "DICA DE BANCADA", "titulo": ["Mostra as duas", "*antes de trocar.*"], "texto": "Cliente que escolhe não reclama depois.", "visual": "check"}
+    ],
+    "final": {"titulo": ["Incell ou OLED?", "*Chama no Whats.*"], "sub": "Fala o modelo do iPhone e o tipo de tela"}
+  }
+}
