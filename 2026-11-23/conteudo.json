@@ -1,0 +1,53 @@
+{
+  "feed": {
+    "etiqueta": "DICA DE BANCADA",
+    "titulo1": "Touch falhando",
+    "titulo2": "depois da troca?",
+    "ilustracao": "um",
+    "selos": ["Conector limpo e seco", "Blindagem no lugar", "Tela sem pressão"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SEGUNDA, ALAGOAS",
+      "titulo1": "Boa semana,",
+      "titulo2": "bancada!",
+      "texto": "Segunda começou. A dica de hoje é sobre touch que falha depois da troca de tela.",
+      "ilustracao": "tres",
+      "selos": []
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Touch fantasma",
+      "titulo2": "já te pegou?",
+      "texto": "Tela trocada e o touch clicando sozinho ou sem resposta? Conta no direct.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Touch falhando?",
+      "titulo2": "Confere isso.",
+      "texto": "No post de hoje: 3 pontos para checar antes de culpar a tela.",
+      "ilustracao": "um",
+      "selos": []
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Assistência",
+      "titulo2": "em Alagoas?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca<br>ou interior?<br><span style='color:#3D7BFF'>marca a gente<br>nos stories</span>",
+      "texto": "Mostra sua bancada nos stories e marca @elitepartsofc.",
+      "selos": []
+    },
+    {
+      "etiqueta": "DISPLAYS",
+      "titulo1": "Precisa de tela?",
+      "titulo2": "Chama no Whats.",
+      "texto": "Mande o modelo do iPhone e o tipo de tela. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "tres",
+      "botao": "LINK NA BIO"
+    }
+  ]
+}
