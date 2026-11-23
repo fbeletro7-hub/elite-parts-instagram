@@ -1,14 +1,15 @@
 # Rotina diária do Instagram @elitepartsofc
 
-Todo dia: **1 post no feed + 5 stories**, publicados automaticamente pelo Metricool (marca blogId `7693398`, fuso `America/Sao_Paulo`).
+Todo dia: **1 Reel + 1 post no feed + 5 stories**, publicados automaticamente pelo Metricool (marca blogId `7693398`, fuso `America/Sao_Paulo`).
 
 ## Passo a passo
 1. Leia `temas.md` e escolha um tema novo (não repetir os últimos 10 dias). Alterne entre: produto (displays, tampas, componentes), educação técnica, bastidores/confiança, chamada para o WhatsApp.
-2. Crie a pasta `AAAA-MM-DD/` com `conteudo.json` (mesmo formato de `2026-10-27/conteudo.json`: `feed` + 5 `stories`) e `legenda.txt`.
+2. Crie a pasta `AAAA-MM-DD/` com `conteudo.json` (modelo completo: `2026-11-23/conteudo.json`, com `estilo`, `feed`, 5 `stories` e `reel`), `legenda.txt` (feed) e `legenda-reel.txt` (Reel).
 3. Gere as artes: `node gerador/gerar.js AAAA-MM-DD/conteudo.json AAAA-MM-DD/` (Playwright já vem instalado). Converta cada PNG para JPEG qualidade 92 e apague os PNG.
-4. Olhe as imagens antes de publicar: texto não pode cortar nem ficar em cima do celular. Título de story com no máximo ~17 caracteres por linha.
-5. `git add`, commit e `git push` para `main`. Pegue o SHA do commit e use links fixos: `https://raw.githubusercontent.com/fbeletro7-hub/elite-parts-instagram/<SHA>/AAAA-MM-DD/<arquivo>.jpg`.
-6. Agende no Metricool (`createScheduledPost`, `autoPublish: true`):
+4. Gere o Reel: `node gerador/reel.js AAAA-MM-DD/conteudo.json AAAA-MM-DD/` (sai `reel.mp4` e `reel-capa.jpg`, ~1 min).
+5. Olhe as imagens antes de publicar: texto não pode cortar nem ficar em cima do celular. Título de story com no máximo ~17 caracteres por linha. No Reel, extraia alguns quadros com ffmpeg e confira.
+6. `git add`, commit e `git push` para `main`. Pegue o SHA do commit e use links fixos: `https://raw.githubusercontent.com/fbeletro7-hub/elite-parts-instagram/<SHA>/AAAA-MM-DD/<arquivo>.jpg`.
+7. Agende no Metricool (só quando a postagem automática estiver ativa; o Reel vai às 18:30, `type: REEL`) (`createScheduledPost`, `autoPublish: true`):
    - Story 1: 09:10 — saudação/abertura do dia
    - Story 2: 11:40
    - Feed (`type: POST`, com a legenda): 12:10
@@ -16,7 +17,19 @@ Todo dia: **1 post no feed + 5 stories**, publicados automaticamente pelo Metric
    - Story 4: 16:40
    - Story 5: 19:40 — chamada para o WhatsApp
    Stories vão sem texto (`instagramData.type: STORY`).
-7. Adicione a linha do dia em `temas.md` e faça push.
+8. Adicione a linha do dia em `temas.md` (com o estilo usado) e faça push.
+
+## Variar o visual (não deixar repetitivo)
+- `estilo` do dia: `escuro`, `claro` ou `azul`. Nunca repetir o estilo do feed de ontem (veja a coluna de estilo em `temas.md`). Cada story pode ter seu próprio `estilo` para misturar.
+- `ilustracao` do feed: alterne entre `lista` (01/02/03 tipográfico), `numero`, `pergunta`, `pecas`, `tampas`, `um`, `tres`. Não usar a mesma do feed de ontem.
+- Nos stories, use pelo menos 3 ilustrações diferentes no dia (ex.: `pergunta` na enquete, `lista` no "post novo", `nenhuma` + `destaque` no story de Alagoas).
+
+## Reel diário
+- 3 a 5 cenas + final automático com o Téo e o botão do WhatsApp. Duração fica entre 18 e 30 s.
+- Cena 1 é o gancho: pergunta ou problema forte, aparece já no primeiro quadro (vira a capa).
+- `visual` das cenas: `celular`, `rachada`, `erro`, `check`, `tampas`, `pecas`, `lista` (com `itens`), `pergunta`, `numero`, `logo`. Não repetir o mesmo visual em duas cenas.
+- `musica`: alternar `a` e `b` a cada dia. `estilo` do Reel pode ser diferente do feed.
+- Legenda do Reel termina com uma pergunta para puxar comentário. Horário sugerido do Reel: 18:30.
 
 ## Foco: ganhar seguidores em Alagoas
 O objetivo principal é crescer seguidores no estado de Alagoas (técnicos, assistências e lojistas de celular).

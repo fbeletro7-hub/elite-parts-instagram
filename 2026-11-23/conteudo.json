@@ -1,10 +1,15 @@
 {
+  "estilo": "claro",
   "feed": {
     "etiqueta": "DICA DE BANCADA",
     "titulo1": "Touch falhando",
     "titulo2": "depois da troca?",
-    "ilustracao": "um",
-    "selos": ["Conector limpo e seco", "Blindagem no lugar", "Tela sem pressão"],
+    "ilustracao": "lista",
+    "itens": [
+      "Conector limpo e seco",
+      "Blindagem no lugar",
+      "Tela sem pressão"
+    ],
     "rodape": "PEÇAS PARA IPHONE"
   },
   "stories": [
@@ -13,7 +18,7 @@
       "titulo1": "Boa semana,",
       "titulo2": "bancada!",
       "texto": "Segunda começou. A dica de hoje é sobre touch que falha depois da troca de tela.",
-      "ilustracao": "tres",
+      "ilustracao": "um",
       "selos": []
     },
     {
@@ -21,7 +26,7 @@
       "titulo1": "Touch fantasma",
       "titulo2": "já te pegou?",
       "texto": "Tela trocada e o touch clicando sozinho ou sem resposta? Conta no direct.",
-      "ilustracao": "um",
+      "ilustracao": "pergunta",
       "selos": []
     },
     {
@@ -29,8 +34,14 @@
       "titulo1": "Touch falhando?",
       "titulo2": "Confere isso.",
       "texto": "No post de hoje: 3 pontos para checar antes de culpar a tela.",
-      "ilustracao": "um",
-      "selos": []
+      "ilustracao": "lista",
+      "selos": [],
+      "estilo": "azul",
+      "itens": [
+        "Conector limpo",
+        "Blindagem",
+        "Sem pressão"
+      ]
     },
     {
       "etiqueta": "TÉCNICO DE ALAGOAS",
@@ -39,7 +50,8 @@
       "ilustracao": "nenhuma",
       "destaque": "<br><br>Maceió, Arapiraca<br>ou interior?<br><span style='color:#3D7BFF'>marca a gente<br>nos stories</span>",
       "texto": "Mostra sua bancada nos stories e marca @elitepartsofc.",
-      "selos": []
+      "selos": [],
+      "estilo": "escuro"
     },
     {
       "etiqueta": "DISPLAYS",
@@ -47,7 +59,61 @@
       "titulo2": "Chama no Whats.",
       "texto": "Mande o modelo do iPhone e o tipo de tela. Atendimento pelo WhatsApp, link da bio.",
       "ilustracao": "tres",
-      "botao": "LINK NA BIO"
+      "botao": "LINK NA BIO",
+      "estilo": "azul"
     }
-  ]
+  ],
+  "reel": {
+    "estilo": "escuro",
+    "musica": "a",
+    "cenas": [
+      {
+        "etiqueta": "TÉCNICO, PRESTA ATENÇÃO",
+        "titulo": [
+          "Trocou a tela",
+          "*e o touch falha?*"
+        ],
+        "texto": "Antes de culpar a peça, confere isso.",
+        "visual": "erro"
+      },
+      {
+        "etiqueta": "TOQUE FANTASMA",
+        "titulo": [
+          "Clicando sozinho",
+          "*ou sem resposta?*"
+        ],
+        "texto": "Na maioria das vezes, é a montagem.",
+        "visual": "pergunta"
+      },
+      {
+        "etiqueta": "CHECKLIST DE BANCADA",
+        "titulo": [
+          "3 pontos",
+          "*para checar:*"
+        ],
+        "visual": "lista",
+        "itens": [
+          "Conector limpo e seco",
+          "Blindagem e parafusos no lugar",
+          "Tela sem pressão na carcaça"
+        ]
+      },
+      {
+        "etiqueta": "DICA FINAL",
+        "titulo": [
+          "Teste o touch",
+          "*antes de fechar.*"
+        ],
+        "texto": "Evita retrabalho e cliente voltando.",
+        "visual": "check"
+      }
+    ],
+    "final": {
+      "titulo": [
+        "Precisa de tela?",
+        "*Chama no Whats.*"
+      ],
+      "sub": "Displays, tampas e componentes para iPhone"
+    }
+  }
 }
