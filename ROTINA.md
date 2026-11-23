@@ -2,6 +2,8 @@
 
 Todo dia: **1 Reel + 1 post no feed + 5 stories**, publicados automaticamente pelo Metricool (marca blogId `7693398`, fuso `America/Sao_Paulo`).
 
+> **Pedido do dono (23/11): Reel TODO DIA e visual variado.** Mesmo quando a tarefa do dia falar só em "feed + 5 stories", gere também o Reel (passo 4), copie `reel.mp4`, `reel-capa.jpg` e `legenda-reel.txt` junto com os outros arquivos para `/mnt/project-files/instagram/AAAA-MM-DD/` (11 arquivos no total), anexe o `reel.mp4` na resposta e inclua no resumo a legenda do Reel e o horário sugerido do Reel (18:30). Siga a seção "Variar o visual".
+
 ## Passo a passo
 1. Leia `temas.md` e escolha um tema novo (não repetir os últimos 10 dias). Alterne entre: produto (displays, tampas, componentes), educação técnica, bastidores/confiança, chamada para o WhatsApp.
 2. Crie a pasta `AAAA-MM-DD/` com `conteudo.json` (modelo completo: `2026-11-23/conteudo.json`, com `estilo`, `feed`, 5 `stories` e `reel`), `legenda.txt` (feed) e `legenda-reel.txt` (Reel).
