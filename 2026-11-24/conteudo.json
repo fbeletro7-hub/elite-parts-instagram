@@ -1,0 +1,117 @@
+{
+  "estilo": "azul",
+  "feed": {
+    "etiqueta": "PEDIDO CERTO",
+    "titulo1": "Pedido certo",
+    "titulo2": "de primeira.",
+    "ilustracao": "numero",
+    "numero": "3",
+    "numeroLegenda": "informações para mandar<br>no WhatsApp: modelo exato,<br>tipo de tela e quantidade",
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "TERÇA, ALAGOAS",
+      "titulo1": "Bom dia,",
+      "titulo2": "técnico!",
+      "texto": "Hoje a dica é para o seu pedido de peça sair certo já na primeira mensagem.",
+      "ilustracao": "tres",
+      "selos": [],
+      "estilo": "escuro"
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Já pediu peça",
+      "titulo2": "do modelo errado?",
+      "texto": "13 no lugar do 13 Pro, 14 Plus no lugar do 14 Pro Max... Conta no direct.",
+      "ilustracao": "pergunta",
+      "selos": [],
+      "estilo": "claro"
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Pedido certo?",
+      "titulo2": "Manda isso.",
+      "texto": "No post de hoje: as 3 informações que evitam peça errada.",
+      "ilustracao": "lista",
+      "selos": [],
+      "itens": [
+        "Modelo exato",
+        "Tipo de tela",
+        "Quantidade"
+      ]
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "De qual cidade",
+      "titulo2": "você atende?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca,<br>Penedo, Rio Largo...<br><span style='color:#3D7BFF'>responde no<br>direct</span>",
+      "texto": "Queremos conhecer as assistências de todo o estado.",
+      "selos": [],
+      "estilo": "escuro"
+    },
+    {
+      "etiqueta": "WHATSAPP",
+      "titulo1": "Monte seu",
+      "titulo2": "pedido no Whats.",
+      "texto": "Mande modelo, tipo de tela e quantidade. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "pecas",
+      "botao": "LINK NA BIO",
+      "estilo": "claro"
+    }
+  ],
+  "reel": {
+    "estilo": "claro",
+    "musica": "b",
+    "cenas": [
+      {
+        "etiqueta": "TÉCNICO, PRESTA ATENÇÃO",
+        "titulo": [
+          "Pediu a tela",
+          "*e veio errada?*"
+        ],
+        "texto": "Quase sempre faltou uma informação.",
+        "visual": "erro"
+      },
+      {
+        "etiqueta": "PARECE IGUAL, NÃO É",
+        "titulo": [
+          "13 ou 13 Pro?",
+          "*Tela não é a mesma.*"
+        ],
+        "texto": "Confira o modelo no aparelho antes de pedir.",
+        "visual": "celular"
+      },
+      {
+        "etiqueta": "MANDE NO WHATSAPP",
+        "titulo": [
+          "3 informações",
+          "*no pedido:*"
+        ],
+        "visual": "lista",
+        "itens": [
+          "Modelo exato do iPhone",
+          "Tipo de tela: Incell ou OLED",
+          "Quantidade de cada peça"
+        ]
+      },
+      {
+        "etiqueta": "DICA FINAL",
+        "titulo": [
+          "Pedido completo",
+          "*sai certo.*"
+        ],
+        "texto": "Menos troca, menos tempo parado na bancada.",
+        "visual": "check"
+      }
+    ],
+    "final": {
+      "titulo": [
+        "Monte seu pedido",
+        "*Chama no Whats.*"
+      ],
+      "sub": "Displays, tampas e componentes para iPhone"
+    }
+  }
+}
