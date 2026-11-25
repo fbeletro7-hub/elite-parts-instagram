@@ -1,0 +1,102 @@
+{
+  "estilo": "escuro",
+  "feed": {
+    "etiqueta": "TELA SEM IMAGEM",
+    "titulo1": "Tela preta",
+    "titulo2": "depois da troca?",
+    "texto": "Antes de condenar a peça, confira 3 pontos na bancada.",
+    "ilustracao": "pergunta",
+    "selos": ["BATERIA", "CONECTOR", "FLEX"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "QUARTA, ALAGOAS",
+      "titulo1": "Bom dia,",
+      "titulo2": "bancada!",
+      "texto": "Hoje a dica é para quando a tela nova fica preta depois da troca.",
+      "ilustracao": "um",
+      "selos": [],
+      "estilo": "claro"
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Tela nova e",
+      "titulo2": "nada de imagem?",
+      "texto": "Já aconteceu na sua bancada? Conta no direct o que era.",
+      "ilustracao": "pergunta",
+      "selos": [],
+      "estilo": "azul"
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Tela preta?",
+      "titulo2": "Confere isso.",
+      "texto": "No post de hoje: 3 pontos antes de condenar a peça.",
+      "ilustracao": "lista",
+      "selos": [],
+      "itens": [
+        "Bateria desconectada",
+        "Conector assentado",
+        "Flex sem dobra"
+      ]
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Passa pra frente",
+      "titulo2": "essa dica.",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca,<br>Palmeira dos Índios,<br>Penedo...<br><span style='color:#3D7BFF'>manda pro colega<br>técnico</span>",
+      "texto": "Compartilha o post com um técnico de Alagoas que já pegou tela preta.",
+      "selos": [],
+      "estilo": "claro"
+    },
+    {
+      "etiqueta": "WHATSAPP",
+      "titulo1": "Pedido de tela?",
+      "titulo2": "Chama no Whats.",
+      "texto": "Displays, tampas e componentes para iPhone. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "tres",
+      "botao": "LINK NA BIO",
+      "estilo": "azul"
+    }
+  ],
+  "reel": {
+    "estilo": "azul",
+    "musica": "a",
+    "cenas": [
+      {
+        "etiqueta": "TÉCNICO, JÁ TE ACONTECEU?",
+        "titulo": ["Trocou a tela", "*e ficou preta?*"],
+        "texto": "Antes de condenar a peça, confere 3 coisas.",
+        "visual": "erro"
+      },
+      {
+        "etiqueta": "PRIMEIRO PASSO",
+        "titulo": ["Bateria", "*desconectada.*"],
+        "texto": "Encaixe o flex da tela sempre com a bateria solta.",
+        "visual": "pecas"
+      },
+      {
+        "etiqueta": "ANTES DE FECHAR",
+        "titulo": ["3 pontos", "*para conferir:*"],
+        "visual": "lista",
+        "itens": [
+          "Bateria desconectada no encaixe",
+          "Conector limpo e bem assentado",
+          "Flex sem dobra nem vinco"
+        ]
+      },
+      {
+        "etiqueta": "DICA FINAL",
+        "titulo": ["Testa antes", "*de colar.*"],
+        "texto": "Imagem e touch ok, aí sim fecha o aparelho.",
+        "visual": "check"
+      }
+    ],
+    "final": {
+      "titulo": ["Precisa de tela?", "*Chama no Whats.*"],
+      "sub": "Displays, tampas e componentes para iPhone"
+    }
+  }
+}
