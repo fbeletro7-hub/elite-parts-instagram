@@ -1,0 +1,103 @@
+{
+  "estilo": "claro",
+  "feed": {
+    "etiqueta": "VEDAÇÃO DA TELA",
+    "titulo1": "Tela levantando",
+    "titulo2": "depois da troca?",
+    "texto": "Na maioria das vezes o problema está na cola. Confira 3 pontos.",
+    "ilustracao": "tres",
+    "selos": ["COLA ANTIGA", "LIMPEZA", "PRENSA"],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "QUINTA, ALAGOAS",
+      "titulo1": "Bom dia,",
+      "titulo2": "técnico!",
+      "texto": "Hoje a dica é para a tela que levanta dias depois da troca.",
+      "ilustracao": "um",
+      "selos": [],
+      "estilo": "escuro"
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Cliente voltou",
+      "titulo2": "com a tela solta?",
+      "texto": "Já te aconteceu? Conta no direct qual cola você usa na bancada.",
+      "ilustracao": "pergunta",
+      "selos": [],
+      "estilo": "azul"
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Tela levantou?",
+      "titulo2": "Confere isso.",
+      "texto": "No post de hoje: 3 pontos para a tela não soltar.",
+      "ilustracao": "lista",
+      "selos": [],
+      "itens": [
+        "Cola antiga removida",
+        "Moldura limpa e seca",
+        "Prensa e tempo de cura"
+      ],
+      "estilo": "claro"
+    },
+    {
+      "etiqueta": "ASSISTÊNCIA EM ALAGOAS",
+      "titulo1": "De qual cidade",
+      "titulo2": "você atende?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca,<br>Rio Largo, Penedo,<br>Palmeira dos Índios...<br><span style='color:#3D7BFF'>responde no direct</span>",
+      "texto": "Queremos conhecer os técnicos de Alagoas que acompanham a página.",
+      "selos": [],
+      "estilo": "escuro"
+    },
+    {
+      "etiqueta": "WHATSAPP",
+      "titulo1": "Precisa de tela?",
+      "titulo2": "Chama no Whats.",
+      "texto": "Displays, tampas e componentes para iPhone. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "pecas",
+      "botao": "LINK NA BIO",
+      "estilo": "azul"
+    }
+  ],
+  "reel": {
+    "estilo": "escuro",
+    "musica": "b",
+    "cenas": [
+      {
+        "etiqueta": "TÉCNICO, JÁ TE ACONTECEU?",
+        "titulo": ["A tela nova", "*levantou?*"],
+        "texto": "Quase sempre o problema está na cola, não na peça.",
+        "visual": "rachada"
+      },
+      {
+        "etiqueta": "PRIMEIRO PASSO",
+        "titulo": ["Tira toda a", "*cola antiga.*"],
+        "texto": "Resto de cola na moldura deixa a tela torta e sem vedação.",
+        "visual": "celular"
+      },
+      {
+        "etiqueta": "ANTES DE COLAR",
+        "titulo": ["3 pontos", "*para conferir:*"],
+        "visual": "lista",
+        "itens": [
+          "Cola antiga toda removida",
+          "Moldura limpa e seca",
+          "Prensa e tempo de cura"
+        ]
+      },
+      {
+        "etiqueta": "DICA FINAL",
+        "titulo": ["Respeita o", "*tempo de cura.*"],
+        "texto": "Entregar antes da hora é pedir retorno do cliente.",
+        "visual": "check"
+      }
+    ],
+    "final": {
+      "titulo": ["Precisa de tela?", "*Chama no Whats.*"],
+      "sub": "Displays, tampas e componentes para iPhone"
+    }
+  }
+}
