@@ -1,0 +1,101 @@
+{
+  "estilo": "azul",
+  "feed": {
+    "etiqueta": "ABERTURA DO APARELHO",
+    "titulo1": "Calor demais",
+    "titulo2": "estraga a tela.",
+    "ilustracao": "lista",
+    "itens": [
+      "Temperatura controlada",
+      "Palheta plástica",
+      "Separação sem pressa"
+    ],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SEXTA, ALAGOAS",
+      "titulo1": "Sextou,",
+      "titulo2": "bancada!",
+      "texto": "Hoje a dica é para abrir o iPhone sem estragar a tela no calor.",
+      "ilustracao": "um",
+      "selos": [],
+      "estilo": "escuro"
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Já perdeu tela",
+      "titulo2": "na abertura?",
+      "texto": "Mancha, trinca ou flex rasgado? Conta no direct o que aconteceu.",
+      "ilustracao": "pergunta",
+      "selos": [],
+      "estilo": "claro"
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Vai abrir?",
+      "titulo2": "Confere isso.",
+      "texto": "No post de hoje: 3 cuidados para não perder a tela na abertura.",
+      "ilustracao": "tres",
+      "selos": ["CALOR", "PALHETA", "CALMA"],
+      "estilo": "azul"
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Marca um amigo",
+      "titulo2": "técnico.",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca,<br>Rio Largo, Penedo,<br>Palmeira dos Índios...<br><span style='color:#3D7BFF'>marca quem abre<br>iPhone todo dia</span>",
+      "texto": "Compartilha o post com um técnico de Alagoas que vive com o soprador na mão.",
+      "selos": [],
+      "estilo": "claro"
+    },
+    {
+      "etiqueta": "WHATSAPP",
+      "titulo1": "Tela ou tampa?",
+      "titulo2": "Chama no Whats.",
+      "texto": "Displays, tampas e componentes para iPhone. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "tampas",
+      "botao": "LINK NA BIO",
+      "estilo": "escuro"
+    }
+  ],
+  "reel": {
+    "estilo": "claro",
+    "musica": "a",
+    "cenas": [
+      {
+        "etiqueta": "TÉCNICO, JÁ TE ACONTECEU?",
+        "titulo": ["Abriu o iPhone", "*e manchou a tela?*"],
+        "texto": "Calor demais na abertura estraga a tela original.",
+        "visual": "rachada"
+      },
+      {
+        "etiqueta": "PRIMEIRO CUIDADO",
+        "titulo": ["Palheta de plástico,", "*nunca metal.*"],
+        "texto": "Metal risca a moldura e pode cortar o flex.",
+        "visual": "pecas"
+      },
+      {
+        "etiqueta": "NA ABERTURA",
+        "titulo": ["3 cuidados", "*para lembrar:*"],
+        "visual": "lista",
+        "itens": [
+          "Temperatura controlada",
+          "Palheta plástica nas bordas",
+          "Separação devagar, sem forçar"
+        ]
+      },
+      {
+        "etiqueta": "DICA FINAL",
+        "titulo": ["Sem pressa", "*na separação.*"],
+        "texto": "Forçou, rasgou o flex. Calma salva a peça.",
+        "visual": "check"
+      }
+    ],
+    "final": {
+      "titulo": ["Precisa de tela?", "*Chama no Whats.*"],
+      "sub": "Displays, tampas e componentes para iPhone"
+    }
+  }
+}
