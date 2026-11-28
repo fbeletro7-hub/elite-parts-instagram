@@ -1,0 +1,121 @@
+{
+  "estilo": "escuro",
+  "feed": {
+    "etiqueta": "DIAGNÓSTICO NA BANCADA",
+    "titulo1": "Não carrega?",
+    "titulo2": "Confira antes.",
+    "texto": "Nem sempre é a bateria. Veja o caminho da carga.",
+    "ilustracao": "pecas",
+    "selos": [
+      "CONECTOR",
+      "CABO",
+      "FLEX DE CARGA"
+    ],
+    "rodape": "PEÇAS PARA IPHONE"
+  },
+  "stories": [
+    {
+      "etiqueta": "SÁBADO, ALAGOAS",
+      "titulo1": "Bom sábado,",
+      "titulo2": "bancada!",
+      "texto": "Hoje a dica é para o iPhone que chega na bancada sem carregar.",
+      "ilustracao": "um",
+      "selos": [],
+      "estilo": "claro"
+    },
+    {
+      "etiqueta": "RESPONDE AQUI",
+      "titulo1": "Chegou iPhone",
+      "titulo2": "sem carregar?",
+      "texto": "Na sua bancada, o que mais resolve: limpeza, cabo ou flex? Responde no direct.",
+      "ilustracao": "pergunta",
+      "selos": [],
+      "estilo": "azul"
+    },
+    {
+      "etiqueta": "POST NOVO NO FEED",
+      "titulo1": "Antes da",
+      "titulo2": "bateria...",
+      "texto": "No post de hoje: o que conferir quando o iPhone não carrega.",
+      "ilustracao": "lista",
+      "itens": [
+        "Conector limpo",
+        "Cabo testado",
+        "Flex de carga"
+      ],
+      "estilo": "escuro"
+    },
+    {
+      "etiqueta": "TÉCNICO DE ALAGOAS",
+      "titulo1": "Assistência",
+      "titulo2": "em Alagoas?",
+      "ilustracao": "nenhuma",
+      "destaque": "<br><br>Maceió, Arapiraca,<br>Penedo, Rio Largo,<br>Palmeira dos Índios...<br><span style='color:#3D7BFF'>marca a Elite Parts<br>no seu story</span>",
+      "texto": "Mostra sua bancada e marca @elitepartsofc. A gente quer conhecer quem conserta iPhone em AL.",
+      "selos": [],
+      "estilo": "claro"
+    },
+    {
+      "etiqueta": "WHATSAPP",
+      "titulo1": "Precisa de peça?",
+      "titulo2": "Chama no Whats.",
+      "texto": "Displays, tampas e componentes para iPhone. Atendimento pelo WhatsApp, link da bio.",
+      "ilustracao": "tampas",
+      "botao": "LINK NA BIO",
+      "estilo": "azul"
+    }
+  ],
+  "reel": {
+    "estilo": "azul",
+    "musica": "b",
+    "cenas": [
+      {
+        "etiqueta": "TÉCNICO, JÁ TE ACONTECEU?",
+        "titulo": [
+          "iPhone sem carga?",
+          "*Calma aí.*"
+        ],
+        "texto": "Nem sempre o problema é a bateria.",
+        "visual": "erro"
+      },
+      {
+        "etiqueta": "PRIMEIRO PASSO",
+        "titulo": [
+          "Olha o conector",
+          "*com lanterna.*"
+        ],
+        "texto": "Sujeira de bolso trava o plugue e a carga não entra.",
+        "visual": "celular"
+      },
+      {
+        "etiqueta": "NA BANCADA",
+        "titulo": [
+          "3 pontos",
+          "*para conferir:*"
+        ],
+        "visual": "lista",
+        "itens": [
+          "Conector limpo e seco",
+          "Cabo e fonte testados",
+          "Flex de carga inteiro"
+        ]
+      },
+      {
+        "etiqueta": "DICA FINAL",
+        "titulo": [
+          "Diagnóstico certo,",
+          "*peça certa.*"
+        ],
+        "texto": "Testou tudo e o flex falhou? Aí sim troca a peça.",
+        "visual": "pecas"
+      }
+    ],
+    "final": {
+      "titulo": [
+        "Precisa de peça?",
+        "*Chama no Whats.*"
+      ],
+      "sub": "Displays, tampas e componentes para iPhone"
+    }
+  }
+}
